@@ -1,0 +1,28 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+* {
+   font-family: 'Poppins';
+   scroll-behavior: smooth !important;
+}
+
+body{
+   /* trial only not fix color */
+   background-color: beige;
+}
+
+.navbar {
+   background-color: white;
+   height: 130px;
+   width: 1513px;
+   border-radius: 40px;
+   align-content: center;
+}
+
+.navbar a {
+   text-decoration: none;
+   color: black;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 30px;
+}
