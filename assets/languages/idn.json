@@ -2,5 +2,7 @@
    "navbar_home"    : "BERANDA",
    "navbar_news"    : "BLOG",
    "navbar_contact" : "KONTAK",
-   "navbar_about"   : "TENTANG KAMI"
+   "navbar_about"   : "TENTANG KAMI",
+   "blogs_beach"    : "Selengkapnya",
+   "blogs_beach_title" : "Pantai"
 } 
