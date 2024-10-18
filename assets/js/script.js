@@ -1,4 +1,5 @@
-const BASE_URL = window.location.origin
+const BASE_URL = window.location.href
+
 
 // Update Content On Window Loaded 
 window.addEventListener("DOMContentLoaded", async() => {
