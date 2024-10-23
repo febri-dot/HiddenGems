@@ -41,7 +41,7 @@ height: 1026px;
 left: 1373px;
 top: 1315px;
 
-background: #1A1A1A;
+background: #1a1a1a;
 box-shadow: 7px 7px 20px 15px rgba(0, 0, 0, 0.25);
 border-radius: 35px;
 }
@@ -53,6 +53,21 @@ left: 720px;
 .blog-posisi2{
 left: 2026px;
 }
+
+img{
+   display: block;
+   width:605px;
+   height:1026px;
+   border-radius: 35px;
+}
+
+img:hover {
+   transform: scale(1.1);
+   transition: all 0.5s ease-in-out;
+}
+
+
+
 
 .tombol{
    /* tombol 1 */
@@ -161,3 +176,61 @@ left: 1402px;
 left: 2050px;
 }
 
+.sub_judul{
+  /* KE MANA HARUS PERGI */
+
+position: absolute;
+width: 593px;
+height: 167px;
+left: 106px;
+top: 1315px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 54px;
+
+color: #000000;
+}
+
+
+.judul{
+/* Pilih Perjalanan Anda Sendiri */
+
+position: absolute;
+width: 542px;
+height: 440px;
+left: 106px;
+top: 1393px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 96px;
+line-height: 110px;
+/* or 115% */
+
+color: #000000;
+}
+
+.isi_kemana_harus_pergi{
+   /* Berpergian ke jogja menawarkan beragam pengalaman, mulai dari budaya, kuliner dan wisata yang indah semua itu dapat kalian temukan di jogja, jelajahi pilihan destinasi menakjubkan kami dan temukan keunikan masing- masing destinasi tersebut */
+
+position: absolute;
+width: 607px;
+height: 387px;
+left: 106px;
+top: 1857px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 60px;
+/* or 188% */
+
+color: #000000;
+}
+
+  
