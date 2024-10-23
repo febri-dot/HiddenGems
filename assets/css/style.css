@@ -8,11 +8,11 @@
 
 body{
    /* trial only not fix color */
-   background-color: rgb(131, 131, 56);
+   background-color: rgb(255, 255, 255);
 }
 
 .navbar {
-   background-color: white;
+   background-color: rgba(172, 167, 167, 0.479);
    height: 130px;
    width: 1513px;
    border-radius: 40px;
@@ -30,3 +30,99 @@ body{
 .homepage--home{
    height: 200px;
 }
+
+
+/* blog fadhlur */
+.blogs{
+   /* Agrowisata Bhumi Merapi Lokasi Dan Harga Tiket Masuk Terbaru Januari 2024 - Wisata Milenial */
+
+position: absolute;
+width: 887px;
+height: 1109px;
+left: 516px;
+top: 1232px;
+
+/* background: url(Agrowisata Bhumi Merapi Lokasi Dan Harga Tiket Masuk Terbaru Januari 2024 - Wisata Milenial.jpg); */
+box-shadow: 15px 15px 10px 9px rgba(56, 56, 56, 0.78);
+
+}
+
+.text{
+   /* Pilih Perjalanan Anda Sendiri */
+
+position: absolute;
+width: 542px;
+height: 440px;
+left: 106px;
+top: 1393px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 100px;
+margin: 40px 0;
+/* or 115% */
+
+color: #000000;
+}
+
+
+.text1{
+   /* KE MANA HARUS PERGI */
+
+position: absolute;
+width: 403px;
+height: 54px;
+left: 106px;
+top: 1315px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 54px;
+
+/* identical to box height */
+
+color: #000000;
+}
+
+.text2{
+   /* Berpergian ke jogja menawarkan beragam pengalaman, mulai dari budaya, kuliner dan wisata yang indah semua itu dapat kalian temukan di jogja, jelajahi pilihan destinasi menakjubkan kami dan temukan keunikan masing- masing destinasi tersebut */
+
+position: absolute;
+width: 607px;
+height: 387px;
+left: 106px;
+top: 1857px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 60px;
+margin: 150px 0;
+/* or 188% */
+
+color: #000000;
+}
+
+.textb1{
+   /* Museum Chocolate */
+
+position: absolute;
+width: 422px;
+height: 180px;
+left: 749px;
+top: 1900px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 80px;
+line-height: 90px;
+/* or 112% */
+
+color: #FFFFFF !important;
+}pdqpe
