@@ -32,7 +32,6 @@ body{
 }
 
 body {
-   font-family: Arial, sans-serif;
    background-color: #f7f7f7;
  }
  
@@ -52,6 +51,8 @@ body {
  .grid-wrapper {
    overflow: hidden;
    width: 100%;
+   margin-left: 30px;
+   margin-right: 30px;
  }
  
  .grids {
@@ -166,4 +167,6 @@ body {
      grid-row: auto;
    }
  }
+
+
  
