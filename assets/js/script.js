@@ -40,3 +40,23 @@ function changeLanguage(language){
    localStorage.setItem('language', language);
    location.reload();
 }
+
+const grids = document.getElementById("grids");
+let currentPosition = 0;
+const gridWidth = grids.offsetWidth / 3;
+
+document.getElementById("nextBtn").addEventListener("click", function () {
+  currentPosition -= gridWidth;
+  if (currentPosition < -gridWidth * 2) {
+    currentPosition = 0;
+  }
+  grids.style.transform = `translateX(${currentPosition}px)`;
+});
+
+document.getElementById("prevBtn").addEventListener("click", function () {
+  currentPosition += gridWidth;
+  if (currentPosition > 0 * 2) {
+    currentPosition = -gridWidth;
+  }
+  grids.style.transform = `translateX(${currentPosition}px)`;
+});
