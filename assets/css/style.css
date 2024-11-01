@@ -30,3 +30,69 @@ body{
 .homepage--home{
    height: 200px;
 }
+
+.about_us H2{/* Tentang Kita */
+   position: absolute;
+   width: 685px;
+   height: 147px;
+   left: 113px;
+   top: 4663px;
+   
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 75px;
+   line-height: 144px;
+   
+   color: #000000;
+   
+   
+
+}
+
+.about_us p{
+   /* Kami adalah perusahaan yang bergerak di bidang pariwisata khususnya di Yogyakarta. Kami mengangkat wisata - wisata di Yogyakarta yang dirasa masih belum dikenal oleh masyarakat luas. Kami merasa, pilihan - pilihan pariwisata di Yogyakarta yang monoton, membuat banyak potensi pariwisata di wilayah daerah Yogyakarta kursng terekspos media. Oleh karena itu, kami hadir untuk Anda sebagai media informasi pariwisata HiddenGems di Yogyakarta. */
+
+position: absolute;
+width: 1649px;
+height: 359px;
+left: 113px;
+top: 4810px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 48px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+
+}
+
+.about_us div{
+   /* Rectangle 8 */
+
+position: absolute;
+width: 2073px;
+height: 211px;
+left: -115px;
+top: 5150px;
+
+background: #FFFFFF;
+filter: blur(40px);
+}
+
+.about_us img{
+   /* +16 Tempat Wisata Pantai Parangtritis Di Jogja */
+
+position: absolute;
+width: 1920px;
+height: 1104px;
+left: 0px;
+top: 5227px;
+
+
+}
+
