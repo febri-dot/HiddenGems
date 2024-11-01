@@ -8,11 +8,11 @@
 
 body{
    /* trial only not fix color */
-   background-color: rgb(131, 131, 56);
+   background-color: rgb(255, 255, 255);
 }
 
 .navbar {
-   background-color: white;
+   background-color: rgba(172, 167, 167, 0.479);
    height: 130px;
    width: 1513px;
    border-radius: 40px;
@@ -30,3 +30,210 @@ body{
 .homepage--home{
    height: 200px;
 }
+
+
+/* blog fadhlur */
+.blog{
+/* style blog */
+position: absolute;
+width: 542px;
+height: 919px;
+top: 1349px;
+
+background: #1A1A1A;
+box-shadow: 7px 7px 20px 15px rgba(0, 0, 0, 0.25);
+border-radius: 35px;
+
+}
+
+.blog-posisi{
+/* Mask Coklat */
+left: 688px;
+}
+
+.blog-posisi2{
+/* Mask Batik */
+left: 1267px;
+}
+
+.blog-posisi3{
+/* Rectangle 12 */
+left: 1843px;
+}
+
+img{
+   display: block;
+   width:542px;
+   height:919px;
+   border-radius: 35px;
+}
+
+img:hover {
+   transform: scale(1.1);
+   transition: all 0.5s ease-in-out;
+}
+
+
+
+
+.tombol{
+/* Rectangle 9 */
+position: absolute;
+width: 421.92px;
+height: 65.39px;
+left: 748.02px;
+top: 2161.48px;
+border: 4px solid #FFFFFF;
+border-radius: 66px;
+}
+
+.tombol2{
+left: 1327.02px;
+}
+
+.tombol3{
+left: 1903.02px;
+}
+
+
+.tombol-isi{
+/* Pelajari Lebih Lanjut */
+position: absolute;
+width: 281.28px;
+height: 43px;
+left: 818.79px;
+top: 2172.23px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 42px;
+
+color: #FFFFFF;
+}
+
+.tombol-isi2{
+left: 1398px;
+}
+
+.tombol-isi3{
+left: 1949px;
+}
+
+
+/* isi blog */
+.text-blog-1{
+/* Museum Chocolate */
+position: absolute;
+width: 471px;
+height: 234px;
+left: 714px;
+top: 1847px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 72px;
+line-height: 90px;
+/* or 125% */
+color: #FFFFFF;
+}
+
+.text-blog-2{
+/* Desa Batik */
+left: 1292.98px;
+top: 1940.22px;
+}
+
+.text-blog-3{
+/* Pantai Krakal */
+width: 1425px;
+height: 115px;
+left: 1869px;
+top: 1940px;
+}
+
+.text-blog-isi-1{
+/* Bersantailah dan nikmati aroma coklat yang harum */
+position: absolute;
+width: 488.21px;
+height: 92.27px;
+left: 713.98px;
+top: 2034.28px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 50px;
+/* or 156% */
+
+color: #FFFFFF;
+}
+
+.text-blog-isi-2{
+left: 1292.98px;
+}
+
+.text-blog-isi-3{
+left: 1868.98px;
+}
+
+.sub_judul{
+/* KE MANA HARUS PERGI */
+position: absolute;
+width: 413px;
+height: 54px;
+left: 81px;
+top: 1349px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 54px;
+/* identical to box height */
+
+color: #000000;
+}
+
+
+.judul{
+/* Pilih Perjalanan Anda Sendiri */
+
+position: absolute;
+width: 479px;
+height: 517px;
+left: 81px;
+top: 1404px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 80px;
+line-height: 95px;
+/* or 119% */
+
+color: #000000;
+}
+
+.isi_kemana_harus_pergi{
+/* Berpergian ke jogja menawarkan beragam pengalaman, mulai dari budaya, kuliner dan wisata yang indah semua itu dapat kalian temukan di jogja, jelajahi pilihan destinasi menakjubkan kami dan temukan keunikan masing- masing destinasi tersebut */
+position: absolute;
+width: 529px;
+height: 556px;
+left: 81px;
+top: 1784px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 60px;
+/* or 214% */
+
+color: #000000;
+}
+
+  
