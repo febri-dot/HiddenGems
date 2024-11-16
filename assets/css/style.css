@@ -1,14 +1,44 @@
 /* import font */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
+::-webkit-scrollbar {
+   width: 5px;
+}
+
+::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 5px transparent;
+   border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+   background: gray;
+   border-radius: 10px;
+}
+
 * {
    font-family: 'Poppins';
    scroll-behavior: smooth !important;
+   box-sizing: border-box;
 }
 
 body{
-   /* trial only not fix color */
    background-color: rgb(255, 255, 255);
+   padding: 0px;
+   margin: 0px;
+   height: 100%;
+   overflow-x: hidden;
+}
+
+.no-mt {
+   margin-top: 0px;
+}
+
+.no-mb {
+   margin-bottom: 0px;
+}
+
+.mb-3 {
+   margin-bottom: 3px;
 }
 
 .navbar {
@@ -27,257 +57,242 @@ body{
    line-height: 30px;
 }
 
-.homepage--home{
-   height: 200px;
-}
 
+/* =========================================*\
+|                                            |
+|           Homepage Section                 |
+|                                            |
+\*==========================================*/
 
-/* blog fadhlur */
-.blog{ 
-/* style blog */
-position: absolute;
-width: 542px;
-height: 919px;
-top: 1349px;
-scroll-snap-align: start;
-
-background: #1A1A1A;
-box-shadow: 7px 7px 20px 15px rgba(0, 0, 0, 0.25);
-border-radius: 35px;
-
-display: flex;
-overflow: hidden;
-}
-
-.blog-posisi{
-/* Mask Coklat */
-left: 688px;
-}
-
-.blog-posisi2{
-/* Mask Batik */
-left: 1267px;
-}
-
-.blog-posisi3{
-/* Rectangle 12 */
-left: 1843px;
-}
-
-/* img{ 
-   display: block;
-   width:542px;
-   height:919px;
-   border-radius: 35px;
-}
-
-img:hover {
-   transform: scale(1.1);
-   transition: all 0.5s ease-in-out;
-} */
-
-img {
+.homepage-home {
    width: 100%;
+   background: #FFFFFF;
    height: 100%;
-   border-radius: 35px;
-   display: block;
-   transition: transform 0.5s ease-in-out;
 }
 
-img:hover {
-   transform: scale(1.1);
+.homepage-home iframe {
+   aspect-ratio: 16 / 9;
+   width: 100% !important;
+   max-height: 873px;
 }
 
-.slider-container {
-   display: flex;
-   overflow-x: auto;
-   scroll-snap-type: x mandatory;
-   -webkit-overflow-scrolling: touch;
-   gap: 20px; /* Jarak antara gambar */
-   padding: 20px; /* Padding agar tidak menempel ke tepi */
+.homepage-attractive-text {
+   width: 800px;
+   height: 130px;
+   margin: auto auto;
+   transform: translateY(-50%);
+
+   background: #FFFFFF;
+   box-shadow: 7px 7px 10px 5px rgba(0, 0, 0, 0.25);
+   border-radius: 40px;
+
+   padding: 23px 38px;
+   box-sizing: border-box;
 }
 
-.slider-container::-webkit-scrollbar {
-   display: none; /* Menghilangkan scrollbar */
-}
+/* =========================================*\
+|                                            |
+|              Blogs Section                 |
+|                                            |
+\*==========================================*/
 
-
-
-.tombol{
-/* Rectangle 9 */
-position: absolute;
-width: 421.92px;
-height: 65.39px;
-left: 748.02px;
-top: 2161.48px;
-border: 4px solid #FFFFFF;
-border-radius: 66px;
-}
-
-.tombol2{
-left: 1327.02px;
-}
-
-.tombol3{
-left: 1903.02px;
-}
-
-
-.tombol-isi{
-/* Pelajari Lebih Lanjut */
-position: absolute;
-width: 281.28px;
-height: 43px;
-left: 818.79px;
-top: 2172.23px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 42px;
-
-color: #FFFFFF;
-}
-
-.tombol-isi2{
-left: 1398px;
-}
-
-.tombol-isi3{
-left: 1949px;
-}
-
-
-/* isi blog */
-.text-blog-1{
-/* Museum Chocolate */
-position: absolute;
-width: 471px;
-height: 234px;
-left: 714px;
-top: 1847px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 72px;
-line-height: 90px;
-/* or 125% */
-color: #FFFFFF;
-}
-
-.text-blog-2{
-/* Desa Batik */
-left: 1292.98px;
-top: 1940.22px;
-}
-
-.text-blog-3{
-/* Pantai Krakal */
-width: 1425px;
-height: 115px;
-left: 1869px;
-top: 1940px;
-}
-
-.text-blog-isi-1{
-/* Bersantailah dan nikmati aroma coklat yang harum */
-position: absolute;
-width: 488.21px;
-height: 92.27px;
-left: 713.98px;
-top: 2034.28px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 50px;
-/* or 156% */
-
-color: #FFFFFF;
-}
-
-.text-blog-isi-2{
-left: 1292.98px;
-}
-
-.text-blog-isi-3{
-left: 1868.98px;
-}
-
-.sub_judul{
-/* KE MANA HARUS PERGI */
-position: absolute;
-width: 413px;
-height: 54px;
-left: 81px;
-top: 1349px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 36px;
-line-height: 54px;
-/* identical to box height */
-
-color: #000000;
-}
-
-
-.judul{
-/* Pilih Perjalanan Anda Sendiri */
-
-position: absolute;
-width: 479px;
-height: 517px;
-left: 81px;
-top: 1404px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 80px;
-line-height: 95px;
-/* or 119% */
-
-color: #000000;
-}
-
-.isi_kemana_harus_pergi{
-/* Berpergian ke jogja menawarkan beragam pengalaman, mulai dari budaya, kuliner dan wisata yang indah semua itu dapat kalian temukan di jogja, jelajahi pilihan destinasi menakjubkan kami dan temukan keunikan masing- masing destinasi tersebut */
-position: absolute;
-width: 529px;
-height: 556px;
-left: 81px;
-top: 1784px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 28px;
-line-height: 60px;
-/* or 214% */
-
-color: #000000;
-}
-
-.conteudo{
-   width: 542px;
-}
-
-.carrousel{ 
+.blogs-area {
+   padding: 50px 0px 50px 110px;
    display: grid; 
-   grid-auto-flow: column;
-   /* gap: 1.2rem;  */
-   overflow-x: auto; 
-   overflow-y: hidden; 
-   overscroll-behavior-x: contain; 
-   scroll-snap-type: x mandatory; 
-   scrollbar-width: none; /* Firefox */ 
-} 
+   grid-template-columns: 3fr 7fr;
+   grid-template-rows: 1fr;
+}
 
-.carrousel::-webkit-scrollbar{ 
-   display: none; /* Webkit browsers */
+
+.blogs-title {
+   width: 413px;
+
+   font-weight: 600;
+   font-size: 30px;
+   line-height: 54px;
+
+   color: #000000;
+}
+
+.blogs-subtitle{
+   width: 580px;
+
+   font-weight: 700;
+   font-size: 74px;
+   line-height: 110px;
+
+   color: #000000;
+}
+
+.blogs-paragraph {
+   width: 607px;
+
+   font-weight: 500;
+   font-size: 26px;
+   line-height: 60px;
+
+   color: #000000;
+}
+
+.blogs-split-screen-right {
+   padding-left: 50px;
+}
+
+.blogs-wrapper {
+   /* Aktifkan jika akan menambahkan box container blogs diamping coklat */
+   /* margin: 0 -34px */
+}
+
+.blogs-wrapper:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+.blogs-container {
+   float: left;
+
+   width: 541.95px;
+   height: 860px;
+   padding: 20px 20px 50px 20px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-end;
+
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-size: center center;
+   
+   box-shadow: 7px 7px 20px 15px rgba(0, 0, 0, 0.25);
+   border-radius: 35px;
+}
+
+.blogs-homepage-title {
+   width: 469px;
+
+   margin-top: auto;
+
+   font-weight: 600;
+   font-size: 50px;
+   line-height: 90px;
+
+   color: #FFFFFF;
+
+}
+
+.blogs-homepage-clickbait {
+   width: 488.21px;
+
+   margin-top: auto;
+
+   font-weight: 400;
+   font-size: 28px;
+   line-height: 50px;
+
+   color: #FFFFFF;
+
+}
+
+.blogs-homepage-learn-more {
+   width: 421.92px;
+   height: 65.39px;
+
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+
+   border: 4px solid #FFFFFF;
+   border-radius: 66px;
+   background-color: transparent !important;
+
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 42px;
+
+   color: #FFFFFF;
+
+}
+
+.blogs-chocolate-container {
+   background-image: url(../images/homepage/museum.jpeg);
+}
+
+
+/* =========================================*\
+|                                            |
+|             About Us Section               |
+|                                            |
+\*==========================================*/
+
+.about-us {
+   background-image: url(../images/homepage/about_us_background.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   
+   background-attachment: fixed;
+
+   height: 100vh;
+}
+
+.about-us-main {
+   padding: 50px 0px 50px 110px;
+   background-color: #FFFFFF;
+}
+
+.about-us-heading {
+   width: 535px;
+   height: 120px;
+
+   font-weight: 700;
+   font-size: 80px;
+   line-height: 120px;
+
+   color: #000000;
+}
+
+.about-us-descriptions {
+   width: 1649px;
+   height: 287px;
+
+   font-weight: 500;
+   font-size: 26px;
+   line-height: 48px;
+   letter-spacing: 0.05em;
+
+   color: #000000;
+}
+
+.about-us-blur {
+   position: absolute;
+   margin: -100px -100px 0px -100px;
+   width: 200%;
+   height: 211px;
+
+   background: #FFFFFF;
+   filter: blur(40px);
+
+}
+
+
+
+
+
+
+
+
+/* =========================================*\
+|                                            |
+|           Responsive CSS Area              |
+|                                            |
+\*==========================================*/
+@media (max-width: 850px) {
+   .homepage-attractive-text {
+      margin: 4px auto;
+      transform: none;
+      max-width: calc(100% - 25px);
+      height: auto;
+   }
 }
