@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Making a Div Horizontally Scrollable using CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        center {
+            text-align: center;
+        }
+
+        h1 {
+            color: green;
+            margin-bottom: 15px;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        div.scroll {
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #e7f0e9;
+            width: 80%;
+            max-width: 600px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>GeeksforGeeks</h1>
+        <h2>Making a Div Horizontally Scrollable Using CSS</h2>
+        <div class="scroll">
+          
+        </div>
+        <div class="scroll">
+            It is a good platform to learn programming. It is an educational website. Prepare for the
+            recruitment drive of product-based companies like Microsoft, Amazon, Adobe, etc., with a free
+            online placement preparation course. The course focuses on various MCQs & coding questions likely
+            to be asked in the interviews & make your upcoming placement season efficient and successful. Also,
+            any geeks can help other geeks by writing articles on GeeksforGeeks. Publishing articles follows a few
+            steps: articles that need little modification or improvement from reviewers are published first.
+            To quickly get your articles reviewed, please refer to existing articles, their formatting style, coding style,
+            and try to make yours as close to them as possible. In case you are a beginner, you may refer to the guidelines
+            to write an article.
+        </div>
+    </center>
+</body>
+
+</html>
