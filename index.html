@@ -14,17 +14,34 @@
 </head>
 <body>
    <!-- Navbar Area -->
-   <div class="navbar">
-      <a href="#home" data-i18n="navbar_home"></a>
-      <a href="#blogs" data-i18n="navbar_blogs"></a>
-      <a href="#contact" data-i18n="navbar_gallery"></a>
-      <a href="#about" data-i18n="navbar_about"></a>
-      <a href="">ini aku coba nambah di master</a>
-
-      <ul>
-         <li class="navbar--language" data-language="en" onclick="changeLanguage('en')">EN</li>
-         <li class="navbar--language" data-language="idn" onclick="changeLanguage('idn')">IDN</li>
-      </ul>
+   <div class="navbar d-flex">
+      <div class="navbar-logo-brand d-flex">
+         <img src="assets/images/logo.png" alt="">
+         <a class="navbar-brand" href="#" data-i18n="navbar_brand"></a>
+      </div>
+      <div class="navbar-menus d-flex">
+         <a class="navbar-menus-text navbar_home" href="#home" data-i18n="navbar_home"></a>
+         <a class="navbar-menus-text navbar_blogs" href="#blogs" data-i18n="navbar_blogs"></a>
+         <a class="navbar-menus-text navbar_gallery" href="#contact" data-i18n="navbar_gallery"></a>
+         <a class="navbar-menus-text navbar_tentang" href="#about" data-i18n="navbar_tentang"></a>
+   
+         <div class="dropdown">
+            <div class="active-language d-flex jc-c">
+               <img src="assets/images/indo.png" alt="">
+               <span class="active-language-text">IDN</span>
+            </div>
+            <div class="dropdown-content d-flex">
+               <div class="language-options d-flex jc-c">
+                  <img src="assets/images/indo.png" alt="">
+                  <span class="active-language-text">IDN</span>
+               </div>
+               <div class="language-options d-flex jc-c">
+                  <img src="assets/images/usa.png" alt="">
+                  <span class="active-language-text">IDN</span>
+               </div>
+            </div>
+         </div>
+      </div>
    </div>
 
    <div class="homepage--home" id="home"></div>

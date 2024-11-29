@@ -1,8 +1,9 @@
 {
+   "navbar_brand" : "HIDDENS GEMS",
    "navbar_home"    : "BERANDA",
-   "navbar_news"    : "BLOG",
-   "navbar_contact" : "KONTAK",
-   "navbar_about"   : "TENTANG KAMI",
+   "navbar_blogs"    : "BLOG",
+   "navbar_gallery" : "GALERI KAMI",
+   "navbar_tentang"   : "TENTANG KAMI",
    "blogs_beach"    : "Selengkapnya",
    "blogs_beach_title" : "Pantai"
 } 

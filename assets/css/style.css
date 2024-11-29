@@ -6,30 +6,130 @@
    scroll-behavior: smooth !important;
 }
 
+.d-flex {
+   display: flex;
+   align-items: center;
+}
+
+.jc-c {
+   justify-content: center;
+}
+
+a {
+   text-decoration: none;
+}
+
 body{
    /* trial only not fix color */
-   background-color: rgb(255, 255, 255);
+   background-color: #000;
 }
 
 .navbar {
-   background-color: rgba(172, 167, 167, 0.479);
-   height: 130px;
+   position: absolute;
    width: 1513px;
-   border-radius: 40px;
-   align-content: center;
+   height: 130px;
+   left: 203px;
+   top: 56px;
+
+   padding: 0px 25px 0px 35px;
+
+   background: #FFFFFF;
+   opacity: 0.4;
+   border-radius: 20px;
+   box-sizing: border-box;
+
+   justify-content: space-between;
+
 }
 
-.navbar a {
-   text-decoration: none;
-   color: black;
+.navbar-logo-brand {
+   gap: 33px;
+}
+
+.navbar-logo-brand img { 
+   width: 73px;
+   height: 84px;
+
+
+}
+
+.navbar-brand {
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 60px;
+
+
+   color: #000000;
+
+}
+
+.navbar-menus {
+   gap: 35px;
+}
+
+
+.navbar-menus-text {
+   height: 35px;
+   
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 36px;
+   
+   color: #000000;
+}
+
+
+.dropdown {
+   width: 126px;
+   height: 74px;
+   
+   background: #FFFFFF;
+   border-radius: 20px;
+   
+}
+
+
+.active-language {
+   width: 100%;
+   height: 100%;
+
+   gap: 5px;
+}
+
+.active-language-text {
    font-weight: 700;
    font-size: 20px;
    line-height: 30px;
+
+   color: #000000;
+
 }
 
-.homepage--home{
-   height: 200px;
+.dropdown img {
+   width: 43px;
+   height: 43px;
+
 }
+
+.dropdown-content{
+   display: none;
+   background-color: #f9f9f9;
+
+   border-radius: 20px;
+   
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   padding: 12px 16px;
+   z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+   display: block;
+}
+
+.language-options {
+   gap: 5px;
+}
+
 
 
 /* blog fadhlur */
