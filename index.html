@@ -11,13 +11,53 @@
 
    <!-- Load CSS File -->
    <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
 </head>
 
 <body>
 
+   <!-- Navbar Section -->
+   <div class="navbar d-flex jc-c">
+      <div class="navbar-logo-brand d-flex">
+         <img src="assets/images/logo.png" alt="HiddenGems Logo">
+         <a href="">HIDDEN GEMS</a>
+      </div>
+      <div class="navbar-menu d-flex">
+         <a href="#home">BERANDA</a>
+         <a href="#blogs">BLOG</a>
+         <a href="#gallery">GALERI</a>
+         <a href="#about_us">TENTANG KAMI</a>
+
+
+         <div class="dropdown">
+            <div class="active-language list-language d-flex jc-c">
+               <img src="assets/images/languages/idn.png" alt="Bahasa Indonesia">
+               <span>IDN</span>
+            </div>
+            <div class="dropdown-content">
+               <div class="dropdown-option selection-hover">
+                  <div class="list-language d-flex jc-c">
+                     <img src="assets/images/languages/idn.png" alt="Bahasa Indonesia">
+                     <span>IDN</span>
+                  </div>
+               </div>
+               <div class="dropdown-option selection-hover">
+                  <div class="list-language d-flex jc-c">
+                     <img src="assets/images/languages/usa.png" alt="Bahasa Inggris">
+                     <span>USA</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
    <!-- Video Homepage Section -->
    <div class="homepage-home no-mt no-mb" id="home">
-      <iframe title="Perjalanan menakjubkan Yogyakarta" src="https://www.youtube.com/embed/Y4oLvVyP5nE?autoplay=1&mute=1&loop=1&playlist=Y4oLvVyP5nE&controls=0" frameborder="0" allowfullscreen></iframe>
+      <iframe title="Perjalanan menakjubkan Yogyakarta"
+         src="https://www.youtube.com/embed/Y4oLvVyP5nE?autoplay=1&mute=1&loop=1&playlist=Y4oLvVyP5nE&controls=0"
+         frameborder="0" allowfullscreen></iframe>
       <div class="homepage-attractive-text">
          <p class="no-mb no-mt"></p>
          <p class="no-mb no-mt"></p>
@@ -29,19 +69,18 @@
       <div class="blogs-split-screen blogs-split-screen-left blogs-opening">
          <h1 class="blogs-title no-mt no-mb">KEMANA HARUS PERGI</h1>
          <h2 class="blogs-subtitle no-mt no-mb">Pilih Perjalanan Anda Sendiri</h2>
-         <p class="blogs-paragraph no-mt no-mb">Berpergian ke Jogja menawarkan beragam pengalaman, mulai dari budaya, kuliner, dan wisata yang indah semua itu dapat kalian temukan di Jogja. Jelajahi pilihan destinasi menakjubkan kami dan temukan keunikan masing - masing destinasi tersebut</p>
+         <p class="blogs-paragraph no-mt no-mb">Berpergian ke Jogja menawarkan beragam pengalaman, mulai dari budaya,
+            kuliner, dan wisata yang indah semua itu dapat kalian temukan di Jogja. Jelajahi pilihan destinasi
+            menakjubkan kami dan temukan keunikan masing - masing destinasi tersebut</p>
       </div>
-      
-      
-      <div class="conteudo">
-      <div class="carrousel">
+
       <div class="blogs-split-screen blogs-split-screen-right blogs-wrapper">
          <!-- Museum Coklat -->
          <div class="blogs-container blogs-chocolate-container">
-            <div class="blogs-container-content"> 
+            <div class="blogs-container-content">
                <h2 class="blogs-homepage-title mb-3">Museum Chocolate</h2>
                <p class="blogs-homepage-clickbait mb-3">Bersantailah dan nikmati aroma coklat yang harum</p>
-               <button class="blogs-homepage-learn-more">Pelajari Lebih Lanjut</button>
+               <a class="blogs-homepage-learn-more" href="http://localhost/anotherHiddenGems/blogs/febri.html">Pelajari Lebih Lanjut</a>
             </div>
          </div>
          <!-- Desa Batik -->
@@ -49,7 +88,7 @@
             <div class="blogs-container-content">
                <h2 class="blogs-homepage-title mb-3">Desa Batik</h2>
                <p class="blogs-homepage-clickbait mb-3">Bersantailah dan pelajari indahnya budaya batik</p>
-               <button class="blogs-homepage-learn-more">Pelajari Lebih Lanjut</button>
+               <a class="blogs-homepage-learn-more" href="http://localhost/anotherHiddenGems/blogs/febri.html">Pelajari Lebih Lanjut</a>
             </div>
          </div>
          <!-- Pantai -->
@@ -57,11 +96,120 @@
             <div class="blogs-container-content">
                <h2 class="blogs-homepage-title mb-3">Pantai</h2>
                <p class="blogs-homepage-clickbait mb-3">Bersantailah dan pelajari indahnya wisata alam</p>
-               <button class="blogs-homepage-learn-more">Pelajari Lebih Lanjut</button>
+               <a class="blogs-homepage-learn-more" href="http://localhost/anotherHiddenGems/blogs/febri.html">Pelajari Lebih Lanjut</a>
             </div>
          </div>
       </div>
-      </div>
+   </div>
+
+   <!-- Gallery Section -->
+   <div class="section-gallery" id="gallery">
+      <h1 class="m-0">Temukan Keajaiban dalam Keindahan Yogyakarta</h1>
+      <div class="slider-gallery">
+         <div class="gallery-column gallery-column-1">
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/klangon/klangon_potrait_1.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/chocolate/chocolate_square_1.png" alt="">
+            </div>
+         </div>
+         <div class="gallery-column gallery-column-2">
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/batik/batik_square_1.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/chocolate/chocolate_potrait_1.png" alt="">
+            </div>
+         </div>
+         <div class="gallery-column gallery-column-3">
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/klangon/klangon_potrait_2.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/chocolate/chocolate_square_2.png" alt="">
+            </div>
+         </div>
+         <div class="gallery-column gallery-column-4">
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/chocolate/chocolate_square_3.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/chocolate/chocolate_potrait_2.png" alt="">
+            </div>
+         </div>
+         <div class="gallery-column gallery-column-5">
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/batik/batik_potrait_1.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/batik/batik_square_2.png" alt="">
+            </div>
+         </div>
+         <div class="gallery-column gallery-column-6">
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/chocolate/chocolate_square_4.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/klangon/klangon_potrait_3.png" alt="">
+            </div>
+         </div>
+         <div class="gallery-column gallery-column-7">
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/chocolate/chocolate_potrait_3.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/chocolate/chocolate_square_6.png" alt="">
+            </div>
+         </div>
+         <div class="gallery-column gallery-column-8">
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/batik/batik_square_3.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/batik/batik_potrait_2.png" alt="">
+            </div>
+         </div>
+         <div class="gallery-column gallery-column-9">
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/chocolate/chocolate_potrait_4.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/klangon/klangon_square_1.png" alt="">
+            </div>
+         </div>
+         <div class="gallery-column gallery-column-10">
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/klangon/klangon_square_2.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/chocolate/chocolate_potrait_5.png" alt="">
+            </div>
+         </div>
+         <div class="gallery-column gallery-column-11">
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/klangon/klangon_potrait_4.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/batik/batik_square_4.png" alt="">
+            </div>
+         </div>
+         <div class="gallery-column gallery-column-12">
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/klangon/klangon_square_3.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/batik/batik_potrait_3.png" alt="">
+            </div>
+         </div>
+         <div class="gallery-column gallery-column-13">
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/batik/batik_potrait_4.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="assets/images/gallery/klangon/klangon_square_4.png" alt="">
+            </div>
+         </div>
       </div>
    </div>
 
@@ -69,13 +217,54 @@
    <div class="about-us" id="about_us">
       <div class="about-us-main">
          <h1 class="about-us-heading">Tentang Kita</h1>
-         <p class="about-us-descriptions">Kami adalah perusahaan yang bergerak di bidang pariwisata khususnya di Yogyakarta. Kami mengangkat wisata - wisata di Yogyakarta yang dirasa masih belum dikenal oleh masyarakat luas. Kami merasa, pilihan - pilihan pariwisata di Yogyakarta yang monoton, membuat banyak potensi pariwisata di wilayah daerah Yogyakarta kurang terekspos media. Oleh karena itu, kami hadir untuk Anda sebagai media informasi pariwisata HiddenGems di Yogyakarta.</p>
+         <p class="about-us-descriptions text-justify">Kami adalah perusahaan yang bergerak di bidang pariwisata khususnya di
+            Yogyakarta. Kami mengangkat wisata - wisata di Yogyakarta yang dirasa masih belum dikenal oleh masyarakat
+            luas. Kami merasa, pilihan - pilihan pariwisata di Yogyakarta yang monoton, membuat banyak potensi
+            pariwisata di wilayah daerah Yogyakarta kurang terekspos media. Oleh karena itu, kami hadir untuk Anda
+            sebagai media informasi pariwisata HiddenGems di Yogyakarta.</p>
       </div>
-      <div class="about-us-blur"></div>
+      <!-- <div class="about-us-blur"></div> -->
    </div>
 
    <!-- Footer Section -->
-   
+   <footer class="d-flex jc-c">
+      <div class="footer-brand">
+         <img src="assets/images/big-logo.png" alt="Footer Logo">
+         <a href="">HIDDEN GEMS</a>
+      </div>
+      <div class="footer-column footer-contact">
+         <p>Kontak</p>
+         <a target="_blank" href="https://maps.app.goo.gl/RgHygqoawyWtxqbJA">Jl. Siliwangi (Ringroad Utara), Jombor, Sleman, D.I. Yogyakarta 55285</a>
+         <div class="social-media">
+            <a target="_blank" href="https://uty.ac.id/"><i class="lni lni-globe-1"></i></a>
+            <a target="_blank" href="https://www.youtube.com/c/utycampus"><i class="lni lni-youtube"></i></a>
+         </div>
+      </div>
+      <div class="footer-column footer-menu">
+         <p>Menu</p>
+         <a class="footer-link" href="#home">BERANDA</a>
+         <a class="footer-link" href="#blogs">BLOG</a>
+         <a class="footer-link" href="#gallery">GALERI</a>
+         <a class="footer-link" href="#about_us">TENTANG KAMI</a>
+      </div>
+      <div class="footer-column footer-team">
+         <p>Tim Kami</p>
+         <a class="footer-link" target="_blank" href="#home">1.	Muhammad Arya Fattah </a>
+         <a class="footer-link" target="_blank" href="#blogs">2. Wibi Prasetyo Aji </a>
+         <a class="footer-link" target="_blank" href="#gallery">3.	Fadhlur Rohman </a>
+         <a class="footer-link" target="_blank" href="https://www.instagram.com/fbrptri__/">4. Febriyanti Putri</a>
+         <a class="footer-link" target="_blank" href="#home">5.	Nabil Syahreza Febry U. </a>
+         <a class="footer-link" target="_blank" href="#blogs">6. Indra Surya Purnama</a>
+         <a class="footer-link" target="_blank" href="#gallery">7.	Abiyan Risqi Maulana </a>
+         <a class="footer-link" target="_blank" href="https://www.instagram.com/ltf_dian/">8. Diandra Luthfie Prastika </a>
+         <a class="footer-link" target="_blank" href="">9. M. Rafif Maulana</a>
+      </div>
+   </footer>
+   <div class="copyright">
+      <span><i class="fa-regular fa-copyright"></i></span>
+      <p><span class="years">2024</span>  Semua Hak  Dilindungi Undang - Undang Dikembangkan oleh Hidden Gems</p>
+   </div>
+
 
 
    <!-- Load Javascript File -->

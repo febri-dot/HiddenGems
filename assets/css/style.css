@@ -29,6 +29,16 @@ body{
    overflow-x: hidden;
 }
 
+a {
+   text-decoration: none;
+}
+
+/* =========================================*\
+|                                            |
+|              Global CSS                    |
+|                                            |
+\*==========================================*/
+
 .no-mt {
    margin-top: 0px;
 }
@@ -41,22 +51,133 @@ body{
    margin-bottom: 3px;
 }
 
-.navbar {
-   background-color: rgba(172, 167, 167, 0.479);
-   height: 130px;
-   width: 1513px;
-   border-radius: 40px;
-   align-content: center;
+.d-flex {
+   display: flex;
+   align-items: center;
 }
 
-.navbar a {
+.jc-c {
+   justify-content: center;
+}
+
+.m-0 {
+   margin: 0px;
+}
+
+.text-justify {
+   text-align: justify;
+}
+
+.navbar {
+   gap: 250px;
+
+   background-color: #FFFFFF;
+   opacity: 0.8;
+   border-radius: 20px;
+
+   /* width: 80%; */
+   width: 1513px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 59px;
+   height: 130px;
+   padding: 28px;
+
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%);
+
+}
+
+.navbar-logo-brand {
+   gap: 34px;
+   padding-left: 34px;
+}
+
+.navbar-logo-brand a {
    text-decoration: none;
-   color: black;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 60px;
+
+   color: #000000;
+}
+
+.navbar-menu {
+   gap: 37px;
+}
+
+.navbar-menu a {
+   text-decoration: none;
+   
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 36px;
+
+   color: #000000;
+}
+
+.dropdown {
+   width: 126px;
+   height: 74px;
+
+   background: #FFFFFF;
+   opacity: 1;
+   border-radius: 20px;
+
+   padding: 12px 0px 12px 0px;
+   z-index: 99;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+   cursor: pointer;
+
+}
+
+.list-language {
+   gap : 5px;
+   padding: 2px;
+}
+
+
+.dropdown img {
+   width: 43px;
+   height: 43px;
+
+}
+
+.dropdown span {
+   width: 40px;
+   height: 30px;
    font-weight: 700;
    font-size: 20px;
    line-height: 30px;
+
+   color: #000000;
 }
 
+.dropdown-content{
+   display: none;
+   background-color: #f9f9f9;
+
+   border-radius: 20px;
+   width: 126px;
+   padding: 0px;
+   
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+
+.dropdown-option {
+   border-radius: 20px;
+   padding: 12px 16px;
+}
+
+.selection-hover:hover {
+   background-color: #f1f1f1;
+}
 
 /* =========================================*\
 |                                            |
@@ -101,6 +222,12 @@ body{
    display: grid; 
    grid-template-columns: 3fr 7fr;
    grid-template-rows: 1fr;
+
+   overflow-x: auto;
+}
+
+.blogs-area::-webkit-scrollbar {
+   width: 10px;
 }
 
 
@@ -209,6 +336,8 @@ body{
    display: block;
    margin-left: auto;
    margin-right: auto;
+   text-align: center;
+   justify-content: center;
 
    border: 4px solid #FFFFFF;
    border-radius: 66px;
@@ -257,12 +386,102 @@ body{
 
 /* =========================================*\
 |                                            |
+|             Gallery  Section               |
+|                                            |
+\*==========================================*/
+
+.section-gallery {
+   padding: 50px 0px 50px 110px;
+}
+
+.section-gallery h1{
+   height: 72px;
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 72px;
+   letter-spacing: 0.05em;
+   text-align: center;
+
+   color: #000000;
+}
+
+.section-gallery .slider-gallery {
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+   
+   gap: 20px;
+
+   overflow-x: auto;
+   
+   /* --marquee-max-width: 90vw;
+   block-size: var(--marquee-item-height);
+   max-inline-size: var(--marquee-max-width);
+   overflow-x: hidden;
+   position: relative;
+   mask-image: linear-gradient(
+     to right,
+     hsl(0 0% 0% / 0),
+     hsl(0 0% 0% / 1) 20%,
+     hsl(0 0% 0% / 1) 80%,
+     hsl(0 0% 0% / 0)
+   ); */
+}
+.section-gallery .slider-gallery .gallery-column {
+   display: flex;
+   flex-direction: column;
+
+   gap: 16px;
+}
+
+.gallery-image  {
+   position: relative;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease;
+
+   border-radius: 24px;
+}
+
+.gallery-image::before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.3);
+   transition: opacity 0.3s ease;
+   opacity: 0;
+   
+} 
+
+.gallery-image:hover::before {
+   opacity: 1;
+}
+
+.gallery-image:hover::before {
+   opacity: 1;
+}
+
+.gallery-image img {
+   object-fit: cover;
+   display: block;
+   transition: transform 0.5s ease;
+}
+
+.gallery-image:hover img {
+   transform: scale(1.2);
+}
+
+
+/* =========================================*\
+|                                            |
 |             About Us Section               |
 |                                            |
 \*==========================================*/
 
 .about-us {
-   background-image: url(../images/homepage/about_us_background.png);
+   /* background-image: url(../images/homepage/about_us_background.png); */
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
@@ -311,8 +530,467 @@ body{
 
 }
 
+/* =========================================*\
+|                                            |
+|               Footer Area                  |
+|                                            |
+\*==========================================*/
 
 
+footer {
+   align-items: flex-start !important;
+   flex-direction: row;
+   padding: 40px 80px;
+   gap: 150px;
+
+   background: #25282D;
+
+}
+
+footer .footer-brand {
+   width: min-content;
+}
+
+footer img {
+   width: 331px;
+   height: 381px;
+}
+
+footer a, footer i{
+   color: #FFFFFF;
+}
+
+footer .footer-brand a {
+   padding: 0px;
+   text-wrap: nowrap;
+   font-weight: 900;
+   font-size: 48px;
+   line-height: 72px;
+   text-align: center;
+
+   color: #FFFFFF;
+}
+
+footer .footer-column {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+
+footer .footer-column a {
+   font-size: 22px;
+}
+
+footer .footer-contact a {
+   width: 420px;
+   height: 108px;
+
+}
+
+footer .footer-contact .social-media {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 0px;
+   gap: 24px;
+
+   width: 136px;
+   height: 56px;
+
+   flex: none;
+   order: 1;
+   flex-grow: 0;
+
+}
+
+footer .footer-contact .social-media a {
+   font-size: 2em; 
+}
+
+footer p {
+   height: 48px;
+
+   font-weight: 600;
+   font-size: 50px;
+   line-height: 48px;
+
+   color: #FAFAFA;
+}
+
+footer .footer-link {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 12px;
+   padding: 10px 0px;
+}
+
+.copyright {
+
+   box-sizing: border-box;
+
+   /* Auto layout */
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 24px 80px;
+   gap: 16px;
+
+   left: 0%;
+   right: 0%;
+   top: 87.1%;
+   bottom: 0%;
+
+   background: #25282D;
+   border-top: 2px solid #FAFAFA;
+
+}
+
+.copyright {
+   font-size: 2em; 
+   color: #FFFFFF;
+}
+
+
+/* =========================================*\
+|                                            |
+|          Chocolate Blog CSS Area           |
+|                                            |
+\*==========================================*/
+
+.section-hero-chocolate {
+   background-image: url(../images/blogs/chocolate/chocolate_hero.png);
+}
+
+.section-main-article-chocolate {
+   background-image:  url(../images/blogs/chocolate/main_article.png),linear-gradient(180deg, #434343 0%, #BBBBBB 100%);
+}
+
+/* =========================================*\
+|                                            |
+|            Batik Blog CSS Area             |
+|                                            |
+\*==========================================*/
+
+
+
+/* =========================================*\
+|                                            |
+|           Klangon Blog CSS Area            |
+|                                            |
+\*==========================================*/
+
+
+
+/* =============================================================================================*\
+|                                                                                                 |
+|                                       Global Blogs CSS                                          |
+|                                         Do not Edit!!                                           |
+|                                                                                                 |
+\*===============================================================================================*/
+
+
+/* =========================================*\
+|                                            |
+|                 Hero Area                  |
+|                                            |
+\*==========================================*/
+
+
+.section-hero {
+   height: 100vh;
+   width: 100vw;
+   
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   align-content: flex-end;
+   flex-wrap: wrap !important;
+
+   padding: 110px;
+}  
+
+.section-hero h1 {
+   font-weight: 700;
+   font-size: 128px;
+   line-height: 192px;
+
+   color: #FFFFFF;
+
+   text-shadow: 10px 10px 8px rgba(0, 0, 0, 0.25);
+
+   position: absolute;
+   bottom: 0px;
+
+}
+
+/* =========================================*\
+|                                            |
+|            Main Article Area               |
+|                                            |
+\*==========================================*/
+
+.section-main-article {
+   background-repeat: no-repeat;
+   background-position: bottom;
+
+   padding: 125px 0px 760px 0px;
+   width: 100vw;
+}
+
+
+.section-main-article h2{
+   margin: 0px 111px 0px 111px;
+
+   font-weight: 600;
+   font-size: 96px;
+   line-height: 144px;
+
+   color: #FFFFFF;
+}
+
+.section-main-article .article {
+   text-align: left;
+   padding: 110px 204px;
+}
+
+.section-main-article .article p {
+   font-weight: 500;
+   font-size: 40px;
+   line-height: 68px;
+
+   color: #FFFFFF;
+}
+
+.section-main-article img {
+   position: relative;
+   width: 100%;
+}
+
+/* =========================================*\
+|                                            |
+|                 Funfact Area               |
+|                                            |
+\*==========================================*/
+
+.section-funfact {
+   padding: 0px;
+}
+
+.section-funfact img {
+   object-fit: cover;
+   object-position: center;
+   width: 100vw;
+   height: 100vh;
+   position: absolute;
+   z-index: -1;
+}
+
+.section-funfact .funfact-linear-overlay-backgorund {
+   position: absolute;
+   background: linear-gradient(90deg, #FFFFFF 42.82%, rgba(255, 255, 255, 0.5) 74.16%, rgba(153, 153, 153, 0) 100%);
+   z-index: 0;
+   width: 100vw;
+   height: 100vh;
+
+}
+
+.section-funfact .funfact-content {
+   padding: 250px 0 0 125px;
+   height: max-content;
+   width: 100vw;
+   height: 100vh;
+}
+
+.section-funfact h2 {
+   font-weight: 600;
+   font-size: 128px;
+   line-height: 192px;
+
+   color: #000000;
+
+   z-index: 1;
+   position: relative;
+
+}
+
+.section-funfact .funfact  p {
+   width: 922px;
+   height: 283px;
+
+   font-weight: 400;
+   font-size: 36px;
+   line-height: 61px;
+
+   color: #000000;
+
+   margin-top: 40px;
+
+   z-index: 1;
+   position: relative;
+}
+
+/* =========================================*\
+|                                            |
+|             What Can I Do Area             |
+|                                            |
+\*==========================================*/
+
+.section-what-can-i-do {
+   padding: 70px 0px 70px 120px;
+   width: 100vw;
+}
+
+.what-can-i-do-wrapper {
+   gap: 95px;
+   overflow-x: auto; 
+   scrollbar-width: none; 
+   counter-reset: item;
+   scroll-behavior: smooth;
+   scroll-snap-type: x mandatory;
+
+   padding-left: 10px;
+   justify-content: flex-start;
+}
+
+.what-can-i-do-wrapper::-webkit-scrollbar {
+   width: 10px;
+   height: 10px;
+}
+.what-can-i-do-wrapper::-webkit-scrollbar-thumb {
+   background: black;
+   border-radius: 10px;
+}
+.what-can-i-do-wrapper::-webkit-scrollbar-track {
+   background: transparent;
+}
+
+.what-can-i-do {
+   gap: 75px;
+   align-items: flex-start !important;
+}
+
+.what-can-i-do:last-child {
+   margin-right: 95px; 
+}
+
+
+.what-can-i-do .left-section img {
+   width: 518px;
+   height: 718px;
+
+   border-radius: 69px;
+
+}
+
+.what-can-i-do .right-section h2 {
+   width: 845px;
+   font-weight: 600;
+   font-size: 85px;
+   line-height: 128px;
+
+   color: #000000;
+}
+
+.what-can-i-do .right-section p {
+   width: 1018px;
+   height: 531px;
+   font-weight: 500;
+   font-size: 35px;
+   line-height: 169.3%;
+
+   color: #000000;
+}
+
+.scroll-navigations {
+   justify-content: space-between;
+   margin-top: 50px;
+}
+
+.button-navigation {
+   box-sizing: border-box;
+
+   width: 85px;
+   height: 85px;
+
+   background: #FFFFFF;
+   border: 5px solid #000000;
+   border-radius: 100px;
+
+   cursor: pointer;
+} 
+
+.buttons-navigations {
+   justify-content: flex-end;
+   gap: 40px;
+
+   padding-right: 130px;
+   margin-left: auto;
+}
+
+.scroll-navigations p {
+   font-size: 50px;
+   font-weight: 500;
+}
+
+.dots-navigation { 
+   margin-top: 10px; 
+   gap: 15px;
+   flex-grow: 1;
+
+} 
+
+.dot-navigation { 
+   cursor: pointer;
+   width: 36px;
+   height: 36px;
+   background: #FFF;
+   border-radius: 100px;
+   border: 3px solid #000000;
+} 
+
+.dot-navigation.active { 
+   background-color: #000; 
+}
+
+.gallery-blog {
+   padding: 50px 0px 50px 0px !important;
+}
+
+.gallery-blog .slider-gallery{
+   display: flex;
+   align-items: center !important;
+   justify-content: center !important;
+   
+   gap: 20px;
+}
+
+/* =========================================*\
+|                                            |
+|            Videos and Maps Area            |
+|                                            |
+\*==========================================*/
+
+.full-screen-section {
+   height: 100vh;
+   width: 100vw;
+}
+
+.iframe-16-9 {
+   aspect-ratio: 16 / 9;
+   width: 100% !important;
+   height: 100%;
+}
+
+
+/* =============================================================================================*\
+|                                                                                                 |
+|                                       End Global Blogs CSS                                      |
+|                                         Do not Edit!!                                           |
+|                                                                                                 |
+\*===============================================================================================*/
 
 
 
