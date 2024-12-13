@@ -1,8 +1,19 @@
 {
    "navbar_home"    : "BERANDA",
-   "navbar_news"    : "BLOG",
-   "navbar_contact" : "KONTAK",
-   "navbar_about"   : "TENTANG KAMI",
-   "blogs_beach"    : "Selengkapnya",
-   "blogs_beach_title" : "Pantai"
+   "navbar_blogs"   : "BLOG",
+   "navbar_gallery" : "GALERI",
+   "navbar_about_us": "TENTANG KAMI",
+
+
+
+   "hero_title_chocolate" : "MUSEUM COKELAT",
+   "main_article_first_paragraph_chocolate" : "Cokelat Monggo merupakan tempat pembuatan cokelat di Yogyakarta, tepatnya berlokasi di Jln. Tugu Gentong No.RT 03, Sribitan, Bangunjiwo, Kasihan, Bantul, Yogyakarta. Letaknya hanya sekitar 20 menit dari Keraton Yogyakarta. Tempat ini memadukan antara museum dan juga pabrik coklelat yang bisa dikunjungi sebagai wisata kuliner dan juga wisata pembelajaran. Pabrik ini didirikan oleh Thierry Detournay, pengusaha asal Belgia yang merasa kurang puas akan rasa cokelat yang ada di pasaran Indoenesia.",
+
+
+
+
+   "footer_contact_title" : "Kontak",
+   "footer_menu_title" : "Menu",
+   "footer_team_title" : "Tim Kami",
+   "footer_copyright"  : "Semua Hak Cipta Dilindungi Undang - Undang Dikembangkan oleh Hidden Gems"
 } 

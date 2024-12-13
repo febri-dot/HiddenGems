@@ -23,10 +23,10 @@
          <a href="">HIDDEN GEMS</a>
       </div>
       <div class="navbar-menu d-flex">
-         <a href="">BERANDA</a>
-         <a href="">BLOG</a>
-         <a href="">GALERI</a>
-         <a href="">TENTANG KAMI</a>
+         <a data-i18n="navbar_home" data-destination_id="home" onclick="scrollToView(this)"></a>
+         <a data-i18n="navbar_blogs" data-destination_id="blogs" onclick="scrollToView(this)"></a>
+         <a data-i18n="navbar_gallery" data-destination_id="gallery" onclick="scrollToView(this)"></a>
+         <a data-i18n="navbar_about_us" data-destination_id="about_us" onclick="scrollToView(this)"></a>
 
 
          <div class="dropdown">
@@ -36,13 +36,13 @@
             </div>
             <div class="dropdown-content">
                <div class="dropdown-option selection-hover">
-                  <div class="list-language d-flex jc-c">
+                  <div class="list-language d-flex jc-c" data-language="idn" onclick="changeLanguage('idn')">
                      <img src="../assets/images/languages/idn.png" alt="Bahasa Indonesia">
                      <span>IDN</span>
                   </div>
                </div>
                <div class="dropdown-option selection-hover">
-                  <div class="list-language d-flex jc-c">
+                  <div class="list-language d-flex jc-c" data-language="usa" onclick="changeLanguage('usa')">
                      <img src="../assets/images/languages/usa.png" alt="Bahasa Inggris">
                      <span>USA</span>
                   </div>
@@ -53,25 +53,18 @@
    </div>
 
    <div class="section-hero section-hero-chocolate d-flex">
-      <h1 class="title-page m-0">MUSEUM COKELAT</h1>
+      <h1 data-i18n="hero_title_chocolate" class="title-page m-0"></h1>
    </div>
 
    <div class="section-main-article section-main-article-chocolate">
-      <h2>The most beautiful beaches in the world!</h2>
+      <h2 data-i18n="main_article_title_chocolate">The most beautiful beaches in the world!</h2>
       <div class="article">
-         <p class="first-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam mollitia vitae
-            nihil esse rem distinctio commodi obcaecati, velit recusandae quis praesentium dignissimos saepe quo nulla
-            assumenda asperiores ab voluptates expedita fugit! Similique perferendis fuga suscipit eligendi quia
-            mollitia ullam! Ipsam, autem architecto veritatis exercitationem corrupti eius eveniet corporis cumque
-            possimus sed quod blanditiis saepe magnam nam. Ducimus consequuntur cum nisi tempora, optio eos animi,
-            perspiciatis quia alias, dolorem debitis dolor sapiente inventore odit veritatis ut voluptates soluta ipsam
-            voluptatem neque. Placeat eveniet libero distinctio natus reprehenderit alias modi, dolorem odit repudiandae
-            eaque quaerat exercitationem, numquam cupiditate, debitis voluptas! Ipsum, repellat.</p>
-         <p class="second-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam similique, velit
+         <p data-i18n="main_article_first_paragraph_chocolate" class="first-paragraph"></p>
+         <p data-i18n="main_article_second_paragraph_chocolate" class="second-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam similique, velit
             sit omnis, veritatis amet enim fuga repudiandae ab nesciunt alias quisquam porro libero nemo temporibus,
             totam id unde! Delectus illo, deserunt illum quae doloremque reprehenderit explicabo maiores aspernatur
             voluptatum enim temporibus nihil repellat facilis saepe aut. Cupiditate, non quaerat!</p>
-         <p class="thrid-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab nam nobis nemo
+         <p data-i18n="main_article_thrid_paragraph_chocolate" class="thrid-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab nam nobis nemo
             sapiente hic blanditiis beatae. Animi, laudantium pariatur dolores commodi officia corrupti ad aliquid nulla
             a quasi unde eius perspiciatis ab mollitia minima cupiditate qui excepturi! Distinctio, sunt.</p>
       </div>
@@ -81,8 +74,8 @@
       <img src="../assets/images/blogs/chocolate/chocolate_funfact.png" alt="">
       <div class="funfact-linear-overlay-backgorund"></div>
       <div class="funfact-content">
-         <h2 class="m-0">Fakta Unik</h2>
-         <div class="funfact">
+         <h2 data-i18n="funfact_title_chocolate" class="m-0">Fakta Unik</h2>
+         <div data-i18n="funfact_chocolate" class="funfact">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cupiditate illo temporibus dolorem ab
                saepe nemo, quis maiores quod repellat.</p>
          </div>
@@ -109,8 +102,8 @@
                <img src="../assets/images/blogs/chocolate/pre_produksi.png" alt="">
             </div>
             <div class="right-section">
-               <h2 class="m-0">Pra Produksi</h2>
-               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem unde quia beatae natus iusto quas
+               <h2 data-i18n="what_can_i_do_first_title_chocolate" class="m-0">Pra Produksi</h2>
+               <p data-i18n="what_can_i_do_first_paragrapgh_chocolate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem unde quia beatae natus iusto quas
                   sapiente maxime delectus eaque consequatur libero odit facilis quisquam expedita qui suscipit minus
                   quibusdam ullam quos laboriosam, eos modi incidunt? Inventore quidem debitis a tenetur consequatur,
                   corrupti dignissimos voluptate qui nostrum itaque molestias sequi, et quia at dolores nihil. Tenetur
@@ -122,8 +115,8 @@
                <img src="../assets/images/blogs/chocolate/pre_produksi.png" alt="">
             </div>
             <div class="right-section">
-               <h2 class="m-0">Pra Produksi</h2>
-               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem unde quia beatae natus iusto quas
+               <h2 data-i18n="what_can_i_do_second_title_chocolate" class="m-0">Pra Produksi</h2>
+               <p data-i18n="what_can_i_do_second_paragrapgh_chocolate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem unde quia beatae natus iusto quas
                   sapiente maxime delectus eaque consequatur libero odit facilis quisquam expedita qui suscipit minus
                   quibusdam ullam quos laboriosam, eos modi incidunt? Inventore quidem debitis a tenetur consequatur,
                   corrupti dignissimos voluptate qui nostrum itaque molestias sequi, et quia at dolores nihil. Tenetur
@@ -156,7 +149,7 @@
    </div>
 
    <div class="section-gallery gallery-blog" id="gallery">
-      <h1 class="m-0">Temukan Keajaiban dalam Keindahan Yogyakarta</h1>
+      <h1 data-i18n="gallery_title_chocolate" class="m-0">Temukan Keajaiban dalam Keindahan Yogyakarta</h1>
       <div class="slider-gallery">
          <div class="gallery-column gallery-column-1">
             <div class="gallery-image" >
@@ -212,23 +205,22 @@
          <a href="">HIDDEN GEMS</a>
       </div>
       <div class="footer-column footer-contact">
-         <p>Kontak</p>
-         <a target="_blank" href="https://maps.app.goo.gl/RgHygqoawyWtxqbJA">Jl. Siliwangi (Ringroad Utara), Jombor,
-            Sleman, D.I. Yogyakarta 55285</a>
+         <p data-i18n="footer_contact_title"></p>
+         <a target="_blank" href="https://maps.app.goo.gl/RgHygqoawyWtxqbJA">Jl. Siliwangi (Ringroad Utara), Jombor, Sleman, D.I. Yogyakarta 55285</a>
          <div class="social-media">
             <a target="_blank" href="https://uty.ac.id/"><i class="lni lni-globe-1"></i></a>
             <a target="_blank" href="https://www.youtube.com/c/utycampus"><i class="lni lni-youtube"></i></a>
          </div>
       </div>
       <div class="footer-column footer-menu">
-         <p>Menu</p>
-         <a class="footer-link" href="#home">BERANDA</a>
-         <a class="footer-link" href="#blogs">BLOG</a>
-         <a class="footer-link" href="#gallery">GALERI</a>
-         <a class="footer-link" href="#about_us">TENTANG KAMI</a>
+         <p data-i18n="footer_menu_title"></p>
+         <a data-i18n="navbar_home" class="footer-link" href="#home"></a>
+         <a data-i18n="navbar_blogs" class="footer-link" href="#blogs"></a>
+         <a data-i18n="navbar_gallery" class="footer-link" href="#gallery"></a>
+         <a data-i18n="navbar_about_us" class="footer-link" href="#about_us"></a>
       </div>
       <div class="footer-column footer-team">
-         <p>Tim Kami</p>
+         <p data-i18n="footer_team_title"></p>
          <a class="footer-link" target="_blank" href="#home">1. Muhammad Arya Fattah </a>
          <a class="footer-link" target="_blank" href="#blogs">2. Wibi Prasetyo Aji </a>
          <a class="footer-link" target="_blank" href="#gallery">3. Fadhlur Rohman </a>
@@ -236,14 +228,13 @@
          <a class="footer-link" target="_blank" href="#home">5. Nabil Syahreza Febry U. </a>
          <a class="footer-link" target="_blank" href="#blogs">6. Indra Surya Purnama</a>
          <a class="footer-link" target="_blank" href="#gallery">7. Abiyan Risqi Maulana </a>
-         <a class="footer-link" target="_blank" href="https://www.instagram.com/ltf_dian/">8. Diandra Luthfie Prastika
-         </a>
+         <a class="footer-link" target="_blank" href="https://www.instagram.com/ltf_dian/">8. Diandra Luthfie Prastika</a>
          <a class="footer-link" target="_blank" href="">9. M. Rafif Maulana</a>
       </div>
    </footer>
    <div class="copyright">
       <span><i class="fa-regular fa-copyright"></i></span>
-      <p><span class="years">2024</span> Semua Hak Dilindungi Undang - Undang Dikembangkan oleh Hidden Gems</p>
+      <p><span class="years">2024</span> <span data-i18n="footer_copyright"></span></p>
    </div>
 
    <script src="../assets/js/script.js" ></script>

@@ -1,45 +1,92 @@
-// const BASE_URL = window.location.href
+const HOSTNAME = window.location.hostname
+const PROTOCOL = window.location.protocol; 
+const HOST     = window.location.host; 
+const PATHNAME = window.location.pathname.split('/'); 
+const BASEFOLDER = PATHNAME[1]; 
+const BASE_URL = HOSTNAME == "localhost" ? `${PROTOCOL}//${HOST}/${BASEFOLDER}/` : `${PROTOCOL}//${HOST}`;
 
 
-// // Update Content On Window Loaded 
-// window.addEventListener("DOMContentLoaded", async() => {
-//    const LANGUAGE = localStorage.getItem("language") || "idn";
+// Update Content On Window Loaded 
+window.addEventListener("DOMContentLoaded", async() => {
+   const LANGUAGE = localStorage.getItem("language") || "idn";
 
-//    const LANGUAGE_DATA = await fetchLanguageData(LANGUAGE);
-//    updateLanguageContent(LANGUAGE_DATA);
+   const LANGUAGE_DATA = await fetchLanguageData(LANGUAGE);
+   updateLanguageContent(LANGUAGE_DATA);
 
-//    // Active Language
-//    document.querySelectorAll('[data-language]').forEach(element => {
-//       lang = element.getAttribute("data-language");
+   // Active Language
+   document.querySelectorAll('[data-language]').forEach(element => {
+      let lang = element.getAttribute("data-language");
+
+      if (lang === LANGUAGE) {
+         element.classList.add("active");
+         let children = element.children;
+         let target   = document.querySelector(".active-language");
+
+         // Remove all content in target
+         target.innerHTML = "";
+
+         // Change content in active-language by cloning children
+         Array.from(children).forEach(child => {
+            let clone_child = child.cloneNode(true);
+            target.appendChild(clone_child);
+         });
+
+         element.parentElement.style.display = "none";
+      } else {
+         element.classList.remove("active");
+         element.parentElement.style.display = "";
+      }
+   });
+
+})
+
+// fetch language data from json file 
+async function fetchLanguageData(language) {
+   const RESPONSE = await fetch(`${BASE_URL}/assets/languages/${language}.json`);
+   return RESPONSE.json()
+}
+
+// update language in content
+function updateLanguageContent(language){
+   document.querySelectorAll('[data-i18n]').forEach(element => {
+      const key = element.getAttribute('data-i18n');
+
+      if(language[key]) {
+         element.textContent = language[key];
+      }
+   });
+   
+}
+
+// Change Language 
+function changeLanguage(language){
+   localStorage.setItem('language', language);
+   location.reload();
+}
+
+// On Scroll Navbar Behaviour
+let last_scroll_posisition = window.pageXOffset || document.documentElement.scrollTop;
+   
+window.onscroll = function (e) {
+   let current_scroll_position = window.pageXOffset || document.documentElement.scrollTop;
+
+   if (current_scroll_position > last_scroll_posisition) {
+      // Scroll Down
       
-//       if(lang == LANGUAGE){
-//          element.classList.add("active")
-//       }
-//    })
+
+   }else if (current_scroll_position < last_scroll_posisition) {
+      // Scroll Up
+   }
+
+   last_scroll_posisition = current_scroll_position;
    
-// })
+}
 
-
-// // fetch language data from json file 
-// async function fetchLanguageData(language) {
-//    const RESPONSE = await fetch(`${BASE_URL}/assets/languages/${language}.json`);
-//    return RESPONSE.json()
-// }
-
-// // update language in content
-// function updateLanguageContent(language){
-//    document.querySelectorAll('[data-i18n]').forEach(element => {
-//       const key = element.getAttribute('data-i18n');
-//       element.textContent = language[key];
-//    });
-   
-// }
-
-// // Change Language 
-// function changeLanguage(language){
-//    localStorage.setItem('language', language);
-//    location.reload();
-// }
+// Keeps the URL unchanged when click menu 
+function scrollToView(link) {
+   let id = link.getAttribute("data-destination_id");
+   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
 
 // Blogs Scroll What Can I do
 function scrollWhatCanIdo(button, direction=false){

@@ -31,6 +31,7 @@ body{
 
 a {
    text-decoration: none;
+   cursor: pointer;
 }
 
 /* =========================================*\
@@ -760,6 +761,7 @@ footer .footer-link {
    font-weight: 500;
    font-size: 40px;
    line-height: 68px;
+   text-align: justify;
 
    color: #FFFFFF;
 }
