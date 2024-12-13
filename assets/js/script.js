@@ -88,6 +88,11 @@ function scrollToView(link) {
    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
 
+// Redirect to Blogs URL 
+function goToLinkBlog(filename) {
+   window.location.href = `${BASE_URL}/blogs/${filename}`;
+}
+
 // Blogs Scroll What Can I do
 function scrollWhatCanIdo(button, direction=false){
    let parent        = button.closest(".section-what-can-i-do")
