@@ -52,7 +52,7 @@ function updateLanguageContent(language){
       const key = element.getAttribute('data-i18n');
 
       if(language[key]) {
-         element.textContent = language[key];
+         element.innerHTML = language[key]
       }
    });
    
@@ -91,6 +91,17 @@ function scrollToView(link) {
 // Redirect to Blogs URL 
 function goToLinkBlog(filename) {
    window.location.href = `${BASE_URL}/blogs/${filename}`;
+}
+
+function infiniteScrollGallery(slider) {
+   let gallery_items = slider.querySelectorAll('.gallery-column'); 
+
+   if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+      gallery_items.forEach(item => {
+         slider.appendChild(item.cloneNode(true));
+      })
+
+   }
 }
 
 // Blogs Scroll What Can I do

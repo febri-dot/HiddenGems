@@ -223,6 +223,7 @@ a {
    display: grid; 
    grid-template-columns: 3fr 7fr;
    grid-template-rows: 1fr;
+   position: relative;
 
    overflow-x: auto;
 }
@@ -314,6 +315,8 @@ a {
 
    color: #FFFFFF;
 
+   transition: transform 0.5s ease-in-out;
+
 }
 
 .blogs-homepage-clickbait {
@@ -328,6 +331,11 @@ a {
 
    color: #FFFFFF;
 
+   transform: translateY(100%); 
+   transition: all 0.5s ease-in-out;
+   opacity: 0;
+   position: absolute;
+
 }
 
 .blogs-homepage-learn-more {
@@ -338,17 +346,18 @@ a {
    margin-left: auto;
    margin-right: auto;
    text-align: center;
-   justify-content: center;
 
    border: 4px solid #FFFFFF;
    border-radius: 66px;
    background-color: transparent !important;
+   transition: all 0.3s ease;
 
    font-weight: 400;
    font-size: 28px;
    line-height: 42px;
 
    color: #FFFFFF;
+   cursor: pointer;
 
 }
 
@@ -360,28 +369,23 @@ a {
    background-image: url(../images/homepage/batik.jpeg);
 }
 
-.blogs-pantai-container {
+.blogs-klangon-container {
    background-image: url(../images/homepage/pantai.jpeg);
 }
 
-.conteudo{
-   width: 1200px;
-}
 
-.carrousel{ 
-   display: grid; 
-   grid-auto-flow: column;
-   /* gap: 1.2rem;  */
-   overflow-x: auto; 
-   overflow-y: hidden; 
-   overscroll-behavior-x: contain; 
-   scroll-snap-type: x mandatory; 
-   scrollbar-width: none; /* Firefox */ 
-   cursor: grab;
+.blogs-container:hover .blogs-homepage-clickbait { 
+   opacity: 1; 
+   transform: translateY(-100%); 
 } 
 
-.carrousel::-webkit-scrollbar{ 
-   display: none; /* Webkit browsers */
+.blogs-container:hover .blogs-homepage-title { 
+   transform: translateY(-50%);  
+}
+
+.blogs-homepage-learn-more:hover { 
+   color: #000000; 
+   background-color: #FAFAFA !important; 
 }
 
 
@@ -392,7 +396,7 @@ a {
 \*==========================================*/
 
 .section-gallery {
-   padding: 50px 0px 50px 110px;
+   padding: 50px 0px 50px 0px;
 }
 
 .section-gallery h1{
@@ -414,20 +418,12 @@ a {
    gap: 20px;
 
    overflow-x: auto;
-   
-   /* --marquee-max-width: 90vw;
-   block-size: var(--marquee-item-height);
-   max-inline-size: var(--marquee-max-width);
-   overflow-x: hidden;
-   position: relative;
-   mask-image: linear-gradient(
-     to right,
-     hsl(0 0% 0% / 0),
-     hsl(0 0% 0% / 1) 20%,
-     hsl(0 0% 0% / 1) 80%,
-     hsl(0 0% 0% / 0)
-   ); */
 }
+
+.section-gallery .slider-gallery::-webkit-scrollbar {
+   display: none;
+}
+
 .section-gallery .slider-gallery .gallery-column {
    display: flex;
    flex-direction: column;
@@ -475,6 +471,8 @@ a {
 }
 
 
+
+
 /* =========================================*\
 |                                            |
 |             About Us Section               |
@@ -498,7 +496,6 @@ a {
 }
 
 .about-us-heading {
-   width: 535px;
    height: 120px;
 
    font-weight: 700;
