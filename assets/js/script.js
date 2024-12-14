@@ -50,6 +50,8 @@ async function fetchLanguageData(language) {
 function updateLanguageContent(language){
    document.querySelectorAll('[data-i18n]').forEach(element => {
       const key = element.getAttribute('data-i18n');
+      console.log([key, language[key], element]);
+      
 
       if(language[key]) {
          element.textContent = language[key];
