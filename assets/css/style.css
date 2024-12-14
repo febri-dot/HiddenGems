@@ -229,9 +229,17 @@ a {
 }
 
 .blogs-area::-webkit-scrollbar {
-   width: 10px;
+   display: none;
 }
 
+.blogs-split-screen-left {
+   transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.blogs-split-screen-left.hidden {
+   opacity: 0; 
+   transform: translateY(-20px);
+}
 
 .blogs-title {
    width: 500px;
@@ -268,8 +276,6 @@ a {
 }
 
 .blogs-wrapper {
-   /* Aktifkan jika akan menambahkan box container blogs diamping coklat */
-   /* margin: 0 -34px; */
    display: grid;
    grid-template-columns: auto auto auto;
    grid-gap: 35px;

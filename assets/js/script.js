@@ -50,8 +50,6 @@ async function fetchLanguageData(language) {
 function updateLanguageContent(language){
    document.querySelectorAll('[data-i18n]').forEach(element => {
       const key = element.getAttribute('data-i18n');
-      console.log([key, language[key], element]);
-      
 
       if(language[key]) {
          element.innerHTML = language[key]
@@ -93,6 +91,14 @@ function scrollToView(link) {
 // Redirect to Blogs URL 
 function goToLinkBlog(filename) {
    window.location.href = `${BASE_URL}/blogs/${filename}`;
+}
+
+function scrollBlogs(slider) {
+   if (slider.scrollLeft > 0) {
+      slider.querySelector(".blogs-split-screen-left").classList.add("hidden");
+   }else {
+      slider.querySelector(".blogs-split-screen-left").classList.remove("hidden");
+   }
 }
 
 function infiniteScrollGallery(slider) {
