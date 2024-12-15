@@ -21,6 +21,10 @@
    box-sizing: border-box;
 }
 
+html {
+   font-size: 16px;
+}
+
 body{
    background-color: rgb(255, 255, 255);
    padding: 0px;
@@ -70,14 +74,11 @@ a {
 }
 
 .navbar {
-   gap: 250px;
-
    background-color: #FFFFFF;
    opacity: 0.8;
    border-radius: 20px;
 
-   /* width: 80%; */
-   width: 1513px;
+   width: 80%;
    margin-left: auto;
    margin-right: auto;
    margin-top: 59px;
@@ -88,17 +89,20 @@ a {
    left: 50%;
    transform: translate(-50%);
 
+   justify-content: space-between;
 }
 
 .navbar-logo-brand {
    gap: 34px;
    padding-left: 34px;
+
+   justify-content: space-between;
 }
 
 .navbar-logo-brand a {
    text-decoration: none;
    font-weight: 700;
-   font-size: 40px;
+   font-size: 2.5rem;
    line-height: 60px;
 
    color: #000000;
@@ -112,7 +116,7 @@ a {
    text-decoration: none;
    
    font-weight: 700;
-   font-size: 24px;
+   font-size: 1.5rem;
    line-height: 36px;
 
    color: #000000;
@@ -150,7 +154,7 @@ a {
    width: 40px;
    height: 30px;
    font-weight: 700;
-   font-size: 20px;
+   font-size: 1.25rem;
    line-height: 30px;
 
    color: #000000;
@@ -219,12 +223,10 @@ a {
 \*==========================================*/
 
 .blogs-area {
-   padding: 50px 0px 50px 110px;
-   display: grid; 
-   grid-template-columns: 3fr 7fr;
-   grid-template-rows: 1fr;
    position: relative;
-
+   padding: 50px 0px 50px 110px;
+   align-items: center;
+   justify-content: flex-start;
    overflow-x: auto;
 }
 
@@ -245,7 +247,7 @@ a {
    width: 500px;
 
    font-weight: 500;
-   font-size: 40px;
+   font-size: 2.5rem;
    line-height: 58px;
 
    color: #000000;
@@ -255,7 +257,7 @@ a {
    width: 460px;
 
    font-weight: 700;
-   font-size: 74px;
+   font-size: 4.625rem;
    line-height: 90px;
 
    color: #000000;
@@ -265,7 +267,7 @@ a {
    width: 500px;
 
    font-weight: 500;
-   font-size: 26px;
+   font-size: 1.625rem;
    line-height: 55px;
 
    color: #000000;
@@ -276,9 +278,8 @@ a {
 }
 
 .blogs-wrapper {
-   display: grid;
-   grid-template-columns: auto auto auto;
    grid-gap: 35px;
+   display: flex;
    
 }
 
@@ -316,7 +317,7 @@ a {
    margin-top: auto;
 
    font-weight: 600;
-   font-size: 70px;
+   font-size: 4.375rem;
    line-height: 80px;
 
    color: #FFFFFF;
@@ -332,7 +333,7 @@ a {
    margin-bottom: 20px;
 
    font-weight: 400;
-   font-size: 32px;
+   font-size: 2rem;
    line-height: 45px;
 
    color: #FFFFFF;
@@ -359,7 +360,7 @@ a {
    transition: all 0.3s ease;
 
    font-weight: 400;
-   font-size: 28px;
+   font-size: 1.75rem;
    line-height: 42px;
 
    color: #FFFFFF;
@@ -403,12 +404,13 @@ a {
 
 .section-gallery {
    padding: 50px 0px 50px 0px;
+   height: 100vh;
 }
 
 .section-gallery h1{
    height: 72px;
    font-weight: 700;
-   font-size: 48px;
+   font-size: 2.5rem;
    line-height: 72px;
    letter-spacing: 0.05em;
    text-align: center;
@@ -485,17 +487,6 @@ a {
 |                                            |
 \*==========================================*/
 
-.about-us {
-   /* background-image: url(../images/homepage/about_us_background.png); */
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
-   
-   background-attachment: fixed;
-
-   height: 100vh;
-}
-
 .about-us-main {
    padding: 50px 0px 50px 110px;
    background-color: #FFFFFF;
@@ -512,26 +503,12 @@ a {
 }
 
 .about-us-descriptions {
-   width: 1649px;
-   height: 287px;
-
    font-weight: 500;
-   font-size: 26px;
+   font-size: 1.625rem;
    line-height: 48px;
    letter-spacing: 0.05em;
 
    color: #000000;
-}
-
-.about-us-blur {
-   position: absolute;
-   margin: -100px -100px 0px -100px;
-   width: 200%;
-   height: 211px;
-
-   background: #FFFFFF;
-   filter: blur(40px);
-
 }
 
 /* =========================================*\
@@ -568,7 +545,7 @@ footer .footer-brand a {
    padding: 0px;
    text-wrap: nowrap;
    font-weight: 900;
-   font-size: 48px;
+   font-size: 3rem;
    line-height: 72px;
    text-align: center;
 
@@ -582,7 +559,7 @@ footer .footer-column {
 }
 
 footer .footer-column a {
-   font-size: 22px;
+   font-size: 1.375rem;
 }
 
 footer .footer-contact a {
@@ -615,7 +592,7 @@ footer p {
    height: 48px;
 
    font-weight: 600;
-   font-size: 50px;
+   font-size: 3.125rem;
    line-height: 48px;
 
    color: #FAFAFA;
@@ -1013,11 +990,34 @@ footer .footer-link {
 |           Responsive CSS Area              |
 |                                            |
 \*==========================================*/
-@media (max-width: 850px) {
-   .homepage-attractive-text {
-      margin: 4px auto;
-      transform: none;
-      max-width: calc(100% - 25px);
-      height: auto;
-   }
+@media (max-width: 768px) { 
+   .navbar { 
+      flex-wrap: wrap; 
+   } 
+   
+   .navbar-logo-brand { 
+      width: 100%; 
+      justify-content: space-between; 
+   } 
+   
+   .navbar-menu { 
+      width: 100%; 
+      flex-direction: column; 
+      display: none; 
+   } 
+   
+   .navbar-menu a { 
+      text-align: left; 
+      padding: 10px 15px; 
+      width: 100%; 
+      border-top: 1px solid #444; 
+   } 
+   
+   .navbar-menu-icon { 
+      display: block; 
+   } 
+   
+   .navbar-menu.active { 
+      display: flex; 
+   } 
 }

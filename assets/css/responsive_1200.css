@@ -1,0 +1,74 @@
+@media (max-width: 1200px) {
+   html {
+      font-size: 14px;
+   }
+
+   .navbar-logo-brand a {
+      display: none;
+   }
+
+   .navbar-menu a {
+      font-size: 1.5rem;
+   }
+
+   .dropdown span {
+      font-size: 1.25rem;
+   }
+
+   .blogs-area {
+      padding: 50px 0px 50px 50px;
+   }
+
+   .blogs-title {
+      font-size: 2.5rem;
+   }
+
+   .blogs-subtitle{
+      font-size: 4.625rem;
+   }
+
+   .blogs-paragraph {
+      font-size: 1.625rem;
+   }
+
+   .blogs-homepage-title {
+      font-size: 4.375rem;
+   }
+
+   .blogs-homepage-clickbait {
+      font-size: 2rem;
+   }
+
+   .blogs-container {
+      width: 500px;
+      height: 800px;
+   }
+
+   .blogs-homepage-learn-more {
+      font-size: 1.75rem;
+   }
+
+   .section-gallery h1{
+      font-size: 2.5rem;
+   }
+
+   .about-us-descriptions {
+      font-size: 1.625rem;
+   }
+
+   footer .footer-column a {
+      font-size: 1.375rem;
+   }
+
+   footer p {
+      font-size: 3.125rem;
+   }
+
+
+   .homepage-attractive-text {
+      margin: 4px auto;
+      transform: none;
+      max-width: calc(100% - 25px);
+      height: auto;
+   }
+}
