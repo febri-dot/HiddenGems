@@ -87,8 +87,91 @@ window.onscroll = function (e) {
 // Keeps the URL unchanged when click menu 
 function scrollToView(link) {
    let id = link.getAttribute("data-destination_id");
-   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+   let destination_element = document.getElementById(id);
+
+   if(destination_element) {
+      destination_element.scrollIntoView({ behavior: 'smooth' });
+   }else {
+      window.location.href = `${BASE_URL}#${id}`;
+   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+   if (window.location.hash) {
+      let destination_element = document.querySelector(`${window.location.hash}`);
+      if (destination_element) {
+         window.scrollTo({
+            top: destination_element.offsetTop,
+            behavior: 'smooth'
+         });
+
+         // remove hash without reload page
+         history.replaceState(null, null, ' ');
+      }
+   }
+});
+
+// Typing and delete text effect
+let typed_text = document.querySelector(".attractive-text-right-typed-text");
+let cursor     = document.querySelector(".attractive-text-right-cursor");
+let language   = localStorage.getItem("language") || "idn";
+let text       
+
+if(language == "idn") {
+   text = [
+      "Kota Istimewa",
+      "Alam Menakjubkan",
+      "Kuliner Nikmat",
+      "Budaya memukau"
+   ]
+}else {
+   text = [
+      "Special City",
+      "Amazing Nature",
+      "Delicious Cuisine",
+      "Fascinating Culture"
+   ]
+}
+
+let typing_delay = 200;
+let erasing_delay = 100;
+let new_text_delay = 2000;
+let text_index = char_index = 0
+
+document.addEventListener("DOMContentLoaded", function () {
+   if (text.length) setTimeout(typing, new_text_delay + 250);
+});
+
+function typing() {
+   if (char_index < text[text_index].length) {
+      if(!cursor.classList.contains("typing"))
+         cursor.classList.add("typing")
+
+      typed_text.textContent += text[text_index].charAt(char_index);
+
+      char_index++;
+      setTimeout(typing, typing_delay);
+   }else {
+      cursor.classList.remove("typing");
+      setTimeout(erasing, new_text_delay);
+   }
+}
+
+function erasing() {
+   if (char_index > 0) {
+      if (!cursor.classList.contains("typing"))
+         cursor.classList.add("typing");
+      typed_text.textContent = text[text_index].substring(0,char_index - 1);
+      char_index--;
+      setTimeout(erasing, erasing_delay);
+   } else {
+      cursor.classList.remove("typing");
+      text_index++;
+      if (text_index >= text.length) text_index = 0;
+      setTimeout(typing, typing_delay + 1100);
+   }
+}
+
 
 // Redirect to Blogs URL 
 function goToLinkBlog(filename) {

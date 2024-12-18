@@ -38,6 +38,10 @@ a {
    cursor: pointer;
 }
 
+p {
+   text-align: justify;
+}
+
 /* =========================================*\
 |                                            |
 |              Global CSS                    |
@@ -235,10 +239,46 @@ a {
 
 .attractive-text-left {
    font-weight: 500;
+   margin-right: 10px;
 }
 
 .attractive-text-right  {
    font-weight: 700;
+}
+
+.attractive-text-right-cursor {
+   display: inline-block;
+   background-color: #111010;
+   margin-left: 0.1rem;
+   width: 3px;
+   animation: blink 1s infinite;
+}
+
+.attractive-text-right-cursor.typing {
+   animation: none;
+}
+
+/* Blink animation for cursor */
+@keyframes blink {
+   0% {
+      background-color: #111010;
+   }
+
+   49% {
+      background-color: #111010;
+   }
+
+   50% {
+      background-color: transparent;
+   }
+
+   99% {
+      background-color: transparent;
+   }
+
+   100% {
+      background-color: #111010;
+   }
 }
 
 /* =========================================*\
@@ -607,6 +647,7 @@ footer .footer-column a {
 .footer-contact {
    flex: 3;
    text-wrap: wrap;
+   gap: 15px;
 }
 
 .footer-menu {
@@ -619,10 +660,10 @@ footer .footer-column a {
 
 footer .footer-contact .social-media {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    align-items: flex-start;
    padding: 0px;
-   gap: 24px;
+   gap: 10px;
 
    flex: none;
    order: 1;
@@ -632,6 +673,10 @@ footer .footer-contact .social-media {
 
 footer .footer-contact .social-media a {
    font-size: 2em;
+}
+
+footer .footer-contact .social-media a span {
+   font-size: 0.75em !important;
 }
 
 footer p {
@@ -793,8 +838,6 @@ footer .footer-link {
    font-weight: 500;
    font-size: 40px;
    line-height: 68px;
-   text-align: justify;
-
    color: #FFFFFF;
 }
 
@@ -920,7 +963,6 @@ footer .footer-link {
 }
 
 .what-can-i-do .right-section h2 {
-   width: 845px;
    font-weight: 600;
    font-size: 85px;
    line-height: 128px;

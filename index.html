@@ -60,7 +60,10 @@
       <iframe title="Perjalanan menakjubkan Yogyakarta" src="https://www.youtube.com/embed/cpYkDmVioDY?autoplay=1&mute=1&loop=1&playlist=cpYkDmVioDY&controls=0" frameborder="0" allowfullscreen></iframe>
       <div class="homepage-attractive-text d-flex jc-c">
          <p data-i18n="attractive_text_left" class="attractive-text-left no-mb no-mt"></p>
-         <p data-i18n="attractive_text_right" class="attractive-text-right no-mb no-mt"></p>
+         <p data-i18n="attractive_text_right" class="attractive-text-right no-mb no-mt">
+            <span class="attractive-text-right-typed-text"></span>
+            <span class="attractive-text-right-cursor">&nbsp;</span>
+         </p>
       </div>
    </div>
 
@@ -230,28 +233,29 @@
          <p data-i18n="footer_contact_title"></p>
          <a target="_blank" href="https://maps.app.goo.gl/RgHygqoawyWtxqbJA">Jl. Siliwangi (Ringroad Utara), Jombor, Sleman, D.I. Yogyakarta 55285</a>
          <div class="social-media">
-            <a target="_blank" href="https://uty.ac.id/"><i class="lni lni-globe-1"></i></a>
-            <a target="_blank" href="https://www.youtube.com/c/utycampus"><i class="lni lni-youtube"></i></a>
+            <a class="d-flex" target="_blank" href="https://uty.ac.id/"><i class="lni lni-globe-1"></i><span>uty.ac.id</span></a>
+            <a class="d-flex" target="_blank" href="https://www.youtube.com/c/utycampus"><i class="lni lni-youtube"></i><span>utycampus</span></a>
+            <a class="d-flex" target="_blank" href="#linktree"><i class="lni lni-instagram"></i><span>instagram</span></a>
          </div>
       </div>
       <div class="footer-column footer-menu">
          <p data-i18n="footer_menu_title"></p>
-         <a data-i18n="navbar_home" class="footer-link" href="#home"></a>
-         <a data-i18n="navbar_blogs" class="footer-link" href="#blogs"></a>
-         <a data-i18n="navbar_gallery" class="footer-link" href="#gallery"></a>
-         <a data-i18n="navbar_about_us" class="footer-link" href="#about_us"></a>
+         <a data-i18n="navbar_home" data-destination_id="home" onclick="scrollToView(this)" class="footer-link"></a>
+         <a data-i18n="navbar_blogs" data-destination_id="blogs" onclick="scrollToView(this)" class="footer-link"></a>
+         <a data-i18n="navbar_gallery" data-destination_id="gallery" onclick="scrollToView(this)" class="footer-link"></a>
+         <a data-i18n="navbar_about_us" data-destination_id="about_us" onclick="scrollToView(this)" class="footer-link"></a>
       </div>
       <div class="footer-column footer-team">
          <p data-i18n="footer_team_title"></p>
-         <a class="footer-link" target="_blank" href="#home">1. Muhammad Arya Fattah </a>
-         <a class="footer-link" target="_blank" href="#blogs">2. Wibi Prasetyo Aji </a>
-         <a class="footer-link" target="_blank" href="#gallery">3. Fadhlur Rohman </a>
-         <a class="footer-link" target="_blank" href="https://www.instagram.com/fbrptri__/">4. Febriyanti Putri</a>
-         <a class="footer-link" target="_blank" href="#home">5. Nabil Syahreza Febry U. </a>
-         <a class="footer-link" target="_blank" href="#blogs">6. Indra Surya Purnama</a>
-         <a class="footer-link" target="_blank" href="#gallery">7. Abiyan Risqi Maulana </a>
-         <a class="footer-link" target="_blank" href="https://www.instagram.com/ltf_dian/">8. Diandra Luthfie Prastika</a>
-         <a class="footer-link" target="_blank" href="">9. M. Rafif Maulana</a>
+         <a class="footer-link" target="_blank">1. Muhammad Arya Fattah </a>
+         <a class="footer-link" target="_blank">2. Wibi Prasetyo Aji </a>
+         <a class="footer-link" target="_blank">3. Fadhlur Rohman </a>
+         <a class="footer-link" target="_blank">4. Febriyanti Putri</a>
+         <a class="footer-link" target="_blank">5. Nabil Syahreza Febry U. </a>
+         <a class="footer-link" target="_blank">6. Indra Surya Purnama</a>
+         <a class="footer-link" target="_blank">7. Abiyan Risqi Maulana </a>
+         <a class="footer-link" target="_blank">8. Diandra Luthfie Prastika</a>
+         <a class="footer-link" target="_blank">9. M. Rafif Maulana</a>
       </div>
    </footer>
    <div class="copyright">
