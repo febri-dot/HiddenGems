@@ -3,10 +3,23 @@
    "navbar_blogs"   : "BLOG",
    "navbar_gallery" : "GALERI",
    "navbar_about_us": "TENTANG KAMI",
+   "attractive_text_left" : "Yogyakarta itu : ",
+   "attractive_text_right" : "&nbsp;&nbsp;Alam Menakjubkan",
+   "blog_title"     : "CARI TAHU TUJUANMU",
+   "blog_subtitle"  : "Ikuti Hatimu Pilih Destinasi",
+   "blog_paragraph" : "Menjelajahi Jogja menawarkan berbagai pengalaman, mulai dari kuliner, budaya, dan wisata menakjubkan. Jelajahi pilihan destinasi menakjubkan kami dan temukan pesona unik dari setiap lokasi. Mulailah perjalanan Anda hari ini dan rasakan keajaiban Jogja!",
+   "blog_homepage_button" : "Pelajari Lebih Lanjut",
+   "blog_homepage_title_chocolate" : "Musem Cokelat",
+   "blog_homepage_clickbait_chocolate" : "Nikmati aroma coklat yang memikat!",
+   "blog_homepage_title_batik" : "Batik Sembung",
+   "blog_homepage_clickbait_batik" : "Santai dan nikmati pesona batik!",
+   "blog_homepage_title_klangon" : "Bukit Klangon",
+   "blog_homepage_clickbait_klangon" : "Nikmati pemandangan dan kesejukan bukit!",
+   "gallery_homepage_title" : "Keajaiban Yogyakarta dalam Keindahan Tak Terlupakan",
+   "about_us_title" : "Kenali Kami Lebih Dekat",
+   "about_us_paragraph" : "Kami adalah sekelompok orang yang memiliki ketertarikan terhadap pariwisata di Yogyakarta. Dengan semangat dan kreativitas, kami menciptakan platform ini untuk memperkenalkan destinasi wisata di Yogyakarta yang masih belum banyak dikenal oleh masyarakat luas. Kami merasa bahwa pilihan pariwisata yang monoton membuat banyak potensi wisata di Yogyakarta kurang terekspos. Oleh karena itu, kami hadir untuk Anda sebagai media informasi pariwisata HiddenGems di Yogyakarta.",
 
 
-
-   "hero_title_chocolate" : "MUSEUM COKELAT",
    "main_article_first_paragraph_chocolate" : "Cokelat Monggo merupakan tempat pembuatan cokelat di Yogyakarta, tepatnya berlokasi di Jln. Tugu Gentong No.RT 03, Sribitan, Bangunjiwo, Kasihan, Bantul, Yogyakarta. Letaknya hanya sekitar 20 menit dari Keraton Yogyakarta. Tempat ini memadukan antara museum dan juga pabrik coklelat yang bisa dikunjungi sebagai wisata kuliner dan juga wisata pembelajaran. Pabrik ini didirikan oleh Thierry Detournay, pengusaha asal Belgia yang merasa kurang puas akan rasa cokelat yang ada di pasaran Indoenesia.",
    "main_article_second_paragraph_chocolate" : "(HTM) Harga Tiket Masuk untuk wisata ini sangat terjangkau, dan pastinya cocok dikantong mahasiswa. Dengan HTM tersebut, disana kita akan dapat menjelajah dua tempat sekaligus, yaitu pabrik dan museum cokelat. Dipintu masuk museum kita akan disuguhkan oleh tulisan - tulisan ala museum untuk menggambarkan asal - usul cokelat itu sendiri. Semakin dalam kita masuk, maka kita akan menemukan miniature  - miniatur bangunan terkenal terbuat dari cokelat, salah satunya yang paling besar adalah Tugu Golong Gilig. Tidak hanya itu, disana kita akan melihat Vespa legend, yang digunakan pak Thierry untuk berjualan cokelat pada masa awal berdiri.",
    "main_article_third_paragraph_chocolate" : "Keluar dari museum melalui pintu belakang, kita akan langsung melihat bangunan putih lengkap dengan aroma khas cokelat yang manis, pabrik cokelat. Masuk ke dalam pabriknya, kita akan disambut suara mesin sortir biji cokelat. Dari balik kaca, kita dapat menyaksikan langsung bagaimana proses pengolahan biji cokelat menjadi cokelat yang sering kita jumpai di pasaran. Pabrik ini juga menyediakan paket mencetak cokelat, bagi kalian yang mau mencoba berkreasi dengan cokelat dan berbagai macam topping pelengkap. Kreasi cetak cokelat ini akan dipandu oleh satu orang staff yang bertugas. Staff ini juga yang akan bertanggung jawab untuk membekukan kreasi cokelat kita dan membungkusnya sebagai cinderamata dari sini. Sembari menunggu cokelat kita dibekukan oleh staff, kita juga bisa bersantai di cafe dengan menikmati berbagai menu makanan dan minuman yang berbahan dasar cokelat.",
@@ -15,6 +28,22 @@
    
    "what_can_i_do_first_paragrapgh_chocolate" : "Pertama-tama biji kakao akan disortir sesuai dengan ukurannya untuk menentukan waktu lamanya disangrai. Proses ini bertujuan untuk mendapatkan karakter dari rasa cokelat yang khas. Setelah itu, dimasukkan ke mesin cracking dan winnowing yang akan memisahkan biji-biji tersebut dari cangkangnya untuk mendapatkan kakao nips. Kakao nips atau kepingan kakao murni akan di-press menjadi adonan kasar, sedangkan cangkangnya akan dimanfaatkan sebagai pupuk.",
    "what_can_i_do_second_paragrapgh_chocolate" : "Selanjutnya yaitu menghaluskan adonan kasar untuk menghasilkan pasta kakao halus yang disebut cairan cokelat atau cairan kakao. Dari tahap inilah penambahan bahan-bahan lain seperti gula, vanili dan varian rasa dilakukan. Beragam rasa cokelat didapat dari isiannya, ada isian dari manisan jahe, ada pula dari kacang mete yang dipanggang. Setelah dicairkan, cokelat tersebut dicetak lalu dimasukkan dalam kulkas untuk mendinginkan sebelum proses pengemasan cokelat.",
+
+
+   "main_article_title_batik" : "Warisan budaya terindah di dunia.",
+   "hero_title_chocolate" : "MUSEUM COKELAT",
+   "main_article_first_paragraph_chocolate" : "Batik Sembung adalah tempat pembuatan batik yang memadukan teknik tradisional dan modern dengan indah. Terletak di Sembungan, Gulurejo, Kecamatan Lendah, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta, tempat ini memiliki sejarah yang kaya. Didirikan oleh Kang Girin pada tahun 2009 dan sekarang dikelola dengan tekun oleh Bayu Permadi, yang akrab disapa Mas Bayu, Batik Sembung menawarkan pandangan unik ke dalam dunia pembuatan batik yang rumit.",
+   "main_article_second_paragraph_batik":"Di Batik Sembung, pengunjung dapat menyaksikan keseluruhan proses pembuatan batik dari awal hingga akhir. Anda dapat melihat langkah-langkah rinci dalam pembuatan batik cetak, proses pewarnaan, dan pembuatan batik dengan menggunakan canting tradisional. Ini adalah perjalanan yang menakjubkan ke dalam seni dan dedikasi yang terlibat dalam pembuatan batik. Batik Sembung menawarkan kesempatan untuk belajar lebih banyak tentang batik, tanpa biaya/FREE. Baik Anda pemula atau penggemar, Anda bisa memperdalam pengetahuan Anda tentang sejarah, teknik, dan makna budaya batik..",
+   "main_article_thrid_paragraph_batik":"Bagi yang tertarik untuk memiliki sepotong warisan budaya ini, Batik Sembung menyediakan berbagai produk batik untuk dibeli. Harga bervariasi berdasarkan kompleksitas desain dan bahan yang digunakan. Selain itu, Anda bahkan dapat membuat desain batik kustom, menciptakan batik unik yang mencerminkan gaya pribadi Anda.",
+   "main_article_fourth_paragraph_batik":"Dengan jarak tempuh sekitar 40 menit dari Tugu Yogyakarta, Batik Sembung adalah destinasi yang patut dikunjungi bagi siapa saja yang tertarik pada seni batik dan ingin menyaksikan keindahan serta kerumitan proses pembuatannya. Batik Sembung bukan hanya sebuah tempat pembuatan batik, tetapi juga pusat budaya yang menggabungkan tradisi dan kreativitas, memberikan pengalaman yang kaya dan mendalam bagi setiap pengunjung.",
+   "funfact_title_batik" : "Fakta Unik",
+   "funfact_batik":"Batik Sembung pernah membuat batik dengan 79 gambar Lambang Negara Garuda Pancasila pada saat hari ulang tahun Indonesia yang ke 79thn.",
+   "what_can_i_do_first_title_batik" : "Batik Canting",
+   "what_can_i_do_first_paragrapgh_batik" : "Di Batik Sembung kita bisa melihat batik canting, batik canting adalah metode tradisional yang dilakukan secara manual oleh ibu ibu disana menggunakan alat canting. Pola batik yang sudah di warnai ditebalkan lagi menggunakan canting untuk memastikan detail dan kejelasan pola.",
+   "what_can_i_do_second_title_batik" : "Batik Cetak",
+   "what_can_i_do_second_paragrapgh_batik" : "batik cetak memerlukan cap (cap) yang sdh di cetak khusus untuk batik tertentu, batik yang sdh di cap akan di warnai dan di keringkan kira kira satu hari satu malam, setelah itu batik akan di rendam dan proses dari pembuatan batik cetak selesai.",
+   "gallery_title_batik" : "Temukan Keajaiban dalam Keindahan Yogyakarta",
+
 
    "footer_contact_title" : "Kontak",
    "footer_menu_title" : "Menu",

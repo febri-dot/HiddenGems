@@ -3,10 +3,21 @@
    "navbar_blogs"   : "BLOGS",
    "navbar_gallery" : "GALLERY",
    "navbar_about_us": "ABOUT US",
-
-
-
-   "hero_title_chocolate" : "CHOCOLATE MUSEUM",
+   "blog_title"     : "WHERE TO GO",
+   "blog_subtitle"  : "Follow Your Heart<br> Find Your Destination",
+   "blog_paragraph" : "Exploring Jogja offers a variety of experiences, from delightful cuisine to rich culture and stunning attractions. Discover our top destinations and uncover the unique charm of each one. Start your journey today and experience the magic of Jogja!",
+   "blog_homepage_button" : "Pelajari Lebih Lanjut",
+   "blog_homepage_title_chocolate" : "Musem Cokelat",
+   "blog_homepage_clickbait_chocolate" : "Nikmati aroma coklat yang memikat!",
+   "blog_homepage_title_batik" : "Batik Sembung",
+   "blog_homepage_clickbait_batik" : "Santai dan nikmati pesona batik!",
+   "blog_homepage_title_klangon" : "Bukit Klangon",
+   "blog_homepage_clickbait_klangon" : "Nikmati pemandangan dan kesejukan bukit!",
+   "gallery_homepage_title" : "The Wonders of Yogyakarta in Unforgettable Beauty",
+   "about_us_title" : "Get to Know Us",
+   "about_us_paragraph" : "We are a group of people with a keen interest in tourism in Yogyakarta. With enthusiasm and creativity, we created this platform to introduce tourist destinations in Yogyakarta that are still relatively unknown to the wider public. We believe that the monotonous tourism options make many tourism potentials in Yogyakarta underexposed. Therefore, we are here for you as a tourism information media for HiddenGems in Yogyakarta.",
+  
+    "hero_title_chocolate" : "CHOCOLATE MUSEUM",
    "main_article_first_paragraph_chocolate" : "Coklat Monggo chocolate factory in Yogyakarta, precisely located in Jln. Tugu Gentong No.RT 03, Sribitan, Bangunjiwo, Kasihan, Bantul, Yogyakarta. It is located only about 20 minutes from the Yogyakarta Palace. This place combine between museum and chocolate factory which can be visited as a culinary tour and also a tourist attraction. This factory founded by Thierry Detournay, businessman from Belgia who feel dissatisfied with the taste of chocolate in Yogyakarta/Indonesia.",
    "main_article_second_paragraph_chocolate" :"The entrance ticket price for this tour very affordable, and of course suitable for college student. With that ticket price, we will be able to explore two places, the chocolate factory and chocolate museum. At the entrance of the chocolate museum we will be presented with an article about the origin of Coklat Monggo. Inside the museum we can see miniature like Tugu Golong Gilig that made from chocolate. Not only that, there we can also see the Pink Vespa that Mr. Thierry usually uses to sell chocolate.",
    "main_article_third_paragraph_chocolate" :"Exiting the museum through the backdoor, we can see a white building u also can smell the sweet aroma of chocolate, chocolate factory. Entered the factory, we can see the chocolate bean sorting machine. From behind the glass, we can see directly how cocoa beans are processed into chocolate. In Coklat Monggo we also can make chocolate using a variety of toppings with the guidance of one staff member. Before u take the chocolate u need to wait the chocolate to set, while u waiting there’s a cafe in Coklat Monggo u can enjoy a lot of menu there.",
@@ -14,6 +25,23 @@
    "funfact_chocolate" : "The word “Monggo” is a word from javanese which mean Please u use it like “Please come in”. Monggo is a refined Javanese language that is commonly used among the community.",
    "what_can_i_do_first_paragrapgh_chocolate" : "First, the cocoa beans are sorted by size to determine the appropriate roasting time, ensuring we achieve that signature chocolate flavor. After sorting, the beans go through cracking and winnowing machines that separate the nibs from the shells. The pure cocoa nibs are then pressed into a coarse paste, while the shells are repurposed as fertilizer.",
    "what_can_i_do_second_paragrapgh_chocolate": "Next, the coarse paste is refined into a smooth cocoa paste, known as chocolate liquor or cocoa liquor. At this stage, additional ingredients like sugar, vanilla, and various flavors are incorporated. The diverse flavors of chocolate come from their fillings, which range from candied ginger to roasted cashews. Once melted, the chocolate is molded and then chilled in the refrigerator before the final packaging process.",
+
+
+   "main_article_title_batik" : "The most beautiful heritage in the world.",
+   "hero_title_chocolate" : "Batik Sembung",
+   "main_article_first_paragraph_batik":"Batik Sembung is a place to produce batik that combine traditional and modern techniques. Located in Sembungan, Gulurejo, Kecamatan Lendah, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta, this place has a rich history. Founded by Kang Girin in 2009 and now managed by Bayu Permadi, who is familiarly known as Mas Bayu, Batik Sembung offers a unique insight into the complex world of batik making.",
+   "main_article_second_paragraph_batik" : " At Batik Sembung, we can watch the entire batik making process from start to finish. You can see the detailed steps in making batik like printed batik, the coloring process, and making batik using traditional canting. It’s an amazing journey into the art and dedication involved in batik making. Sembung Batik offers the opportunity to learn more about batik with no cost/Free. Whether you are a beginner or a fan, you can deepen your knowledge of the history, techniquies and cultural meaning of batik..",
+   "main_article_thrid_paragraph_batik" : "For those who interested owning a piece of this cultural heritage, Batik Sembung provides a variety of batik products for purchase. Prices vary based on the complexity of the design and materials used. Besides that, you can even create custom batik designs. Creating unique batik that reflects your personal style.",
+   "main_article_fourth_paragraph_batik" : "This place about 40 minutes away from Tugu Yogyakarta, Sembung Batik is a destination that u must to visit for anyone who interested in batik art and wants to witness the beauty and complexity of the manufacturing process. Batik Sembung is not only a batik making place, but also a cultural center that combines tradition and creativity, providing a rich and immersive experience for every visitors. ",
+   "funfact_title_batik" : "Unique Facts",
+   "funfact_batik" : "Batik Sembung made batik with 79 images of the National Emblem of Garuda Pancasila on Indonesia’s 79th birthday.",
+   "what_can_i_do_first_title_batik" : "Batik Canting",
+   "what_can_i_do_first_paragrapgh_batik"  : "In Batik Sembung we also can see Batik Canting, Batik Canting is a traditional method which is done manually by the women there using a canting tool. The batik pattern that has bee colored is thickened again using canting to ensure detail and clarity of patern.",
+   "what_can_i_do_second_title_batik" : "Printed Batik",
+   "what_can_i_do_second_paragrapgh_batik" : " Batik cetak requires a stamp that has been printed specifically for certain batik. Batik Cetak will be colored and dried for approximately one day and one night, after that the batik will be sokaed and the process of making Batik Cetak is complete.",
+   "gallery_title_batik" : "discover the Miracle in the Beauty of Yogyakarta",
+   
+
 
    "footer_contact_title" : "Contact",
    "footer_menu_title" : "Menu",

@@ -52,7 +52,7 @@ function updateLanguageContent(language){
       const key = element.getAttribute('data-i18n');
 
       if(language[key]) {
-         element.textContent = language[key];
+         element.innerHTML = language[key]
       }
    });
    
@@ -72,10 +72,12 @@ window.onscroll = function (e) {
 
    if (current_scroll_position > last_scroll_posisition) {
       // Scroll Down
+      document.querySelector(".navbar").classList.add("hidden");
       
 
    }else if (current_scroll_position < last_scroll_posisition) {
       // Scroll Up
+      document.querySelector(".navbar").classList.remove("hidden");
    }
 
    last_scroll_posisition = current_scroll_position;
@@ -91,6 +93,25 @@ function scrollToView(link) {
 // Redirect to Blogs URL 
 function goToLinkBlog(filename) {
    window.location.href = `${BASE_URL}/blogs/${filename}`;
+}
+
+function scrollBlogs(slider) {
+   if (slider.scrollLeft > 0) {
+      slider.querySelector(".blogs-split-screen-left").classList.add("hidden");
+   }else {
+      slider.querySelector(".blogs-split-screen-left").classList.remove("hidden");
+   }
+}
+
+function infiniteScrollGallery(slider) {
+   let gallery_items = slider.querySelectorAll('.gallery-column'); 
+
+   if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+      gallery_items.forEach(item => {
+         slider.appendChild(item.cloneNode(true));
+      })
+
+   }
 }
 
 // Blogs Scroll What Can I do

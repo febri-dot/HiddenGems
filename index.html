@@ -11,6 +11,8 @@
 
    <!-- Load CSS File -->
    <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/responsive_1200.css">
+   <link rel="stylesheet" href="assets/css/responsive_768.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
 </head>
@@ -18,7 +20,7 @@
 <body>
 
    <!-- Navbar Section -->
-   <div class="navbar d-flex jc-c">
+   <div class="navbar d-flex">
       <div class="navbar-logo-brand d-flex">
          <img src="assets/images/logo.png" alt="HiddenGems Logo">
          <a href="">HIDDEN GEMS</a>
@@ -55,46 +57,44 @@
 
    <!-- Video Homepage Section -->
    <div class="homepage-home no-mt no-mb" id="home">
-      <iframe title="Perjalanan menakjubkan Yogyakarta" src="https://www.youtube.com/embed/QukLwBkrSe4?autoplay=1&mute=1&loop=1&playlist=QukLwBkrSe4&controls=0" frameborder="0" allowfullscreen></iframe>
-      <div class="homepage-attractive-text">
-         <p class="no-mb no-mt"></p>
-         <p class="no-mb no-mt"></p>
+      <iframe title="Perjalanan menakjubkan Yogyakarta" src="https://www.youtube.com/embed/cpYkDmVioDY?autoplay=1&mute=1&loop=1&playlist=cpYkDmVioDY&controls=0" frameborder="0" allowfullscreen></iframe>
+      <div class="homepage-attractive-text d-flex jc-c">
+         <p data-i18n="attractive_text_left" class="attractive-text-left no-mb no-mt"></p>
+         <p data-i18n="attractive_text_right" class="attractive-text-right no-mb no-mt"></p>
       </div>
    </div>
 
    <!-- Blogs Section -->
-   <div class="blogs-area" id="blogs">
+   <div class="blogs-area d-flex" id="blogs" onscroll="scrollBlogs(this)">
       <div class="blogs-split-screen blogs-split-screen-left blogs-opening">
-         <h1 class="blogs-title no-mt no-mb">KEMANA HARUS PERGI</h1>
-         <h2 class="blogs-subtitle no-mt no-mb">Pilih Perjalanan Anda Sendiri</h2>
-         <p class="blogs-paragraph no-mt no-mb">Berpergian ke Jogja menawarkan beragam pengalaman, mulai dari budaya,
-            kuliner, dan wisata yang indah semua itu dapat kalian temukan di Jogja. Jelajahi pilihan destinasi
-            menakjubkan kami dan temukan keunikan masing - masing destinasi tersebut</p>
+         <h1 data-i18n="blog_title" class="blogs-title no-mt no-mb"></h1>
+         <h2 data-i18n="blog_subtitle" class="blogs-subtitle no-mt no-mb"></h2>
+         <p data-i18n="blog_paragraph" class="blogs-paragraph text-justify no-mt no-mb"></p>
       </div>
 
       <div class="blogs-split-screen blogs-split-screen-right blogs-wrapper">
          <!-- Museum Coklat -->
          <div class="blogs-container blogs-chocolate-container">
             <div class="blogs-container-content">
-               <h2 class="blogs-homepage-title mb-3">Museum Chocolate</h2>
-               <p class="blogs-homepage-clickbait mb-3">Bersantailah dan nikmati aroma coklat yang harum</p>
-               <a class="blogs-homepage-learn-more" onclick="goToLinkBlog('chocolate.html')">Pelajari Lebih Lanjut</a>
+               <h2 data-i18n="blog_homepage_title_chocolate" class="blogs-homepage-title mb-3"></h2>
+               <p  data-i18n="blog_homepage_clickbait_chocolate"class="blogs-homepage-clickbait mb-3"></p>
+               <button  data-i18n="blog_homepage_button"class="blogs-homepage-learn-more" onclick="goToLinkBlog('chocolate.html')"></button>
             </div>
          </div>
          <!-- Desa Batik -->
          <div class="blogs-container blogs-batik-container">
             <div class="blogs-container-content">
-               <h2 class="blogs-homepage-title mb-3">Desa Batik</h2>
-               <p class="blogs-homepage-clickbait mb-3">Bersantailah dan pelajari indahnya budaya batik</p>
-               <a class="blogs-homepage-learn-more" onclick="goToLinkBlog('batik.html')">Pelajari Lebih Lanjut</a>
+               <h2 data-i18n="blog_homepage_title_batik" class="blogs-homepage-title mb-3"></h2>
+               <p data-i18n="blog_homepage_clickbait_batik" class="blogs-homepage-clickbait mb-3"></p>
+               <button data-i18n="blog_homepage_button" class="blogs-homepage-learn-more" onclick="goToLinkBlog('batik.html')"></button>
             </div>
          </div>
-         <!-- Pantai -->
-         <div class="blogs-container blogs-pantai-container">
+         <!-- Klangon -->
+         <div class="blogs-container blogs-klangon-container">
             <div class="blogs-container-content">
-               <h2 class="blogs-homepage-title mb-3">Pantai</h2>
-               <p class="blogs-homepage-clickbait mb-3">Bersantailah dan pelajari indahnya wisata alam</p>
-               <a class="blogs-homepage-learn-more" onclick="goToLinkBlog('klangon.html')">Pelajari Lebih Lanjut</a>
+               <h2 data-i18n="blog_homepage_title_klangon" class="blogs-homepage-title mb-3"></h2>
+               <p data-i18n="blog_homepage_clickbait_klangon" class="blogs-homepage-clickbait mb-3"></p>
+               <button data-i18n="blog_homepage_button" class="blogs-homepage-learn-more" onclick="goToLinkBlog('klangon.html')"></button>
             </div>
          </div>
       </div>
@@ -102,109 +102,109 @@
 
    <!-- Gallery Section -->
    <div class="section-gallery" id="gallery">
-      <h1 class="m-0">Temukan Keajaiban dalam Keindahan Yogyakarta</h1>
-      <div class="slider-gallery">
+      <h1 data-i18n="gallery_homepage_title" class="m-0"></h1>
+      <div class="slider-gallery" onscroll="infiniteScrollGallery(this)">
          <div class="gallery-column gallery-column-1">
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-8" >
                <img src="assets/images/gallery/klangon/klangon_potrait_1.png" alt="">
             </div>
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-2" >
                <img src="assets/images/gallery/chocolate/chocolate_square_1.png" alt="">
             </div>
          </div>
          <div class="gallery-column gallery-column-2">
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-2" >
                <img src="assets/images/gallery/batik/batik_square_1.png" alt="">
             </div>
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-8" >
                <img src="assets/images/gallery/chocolate/chocolate_potrait_1.png" alt="">
             </div>
          </div>
          <div class="gallery-column gallery-column-3">
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-8" >
                <img src="assets/images/gallery/klangon/klangon_potrait_2.png" alt="">
             </div>
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-2" >
                <img src="assets/images/gallery/chocolate/chocolate_square_2.png" alt="">
             </div>
          </div>
          <div class="gallery-column gallery-column-4">
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-2" >
                <img src="assets/images/gallery/chocolate/chocolate_square_3.png" alt="">
             </div>
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-8" >
                <img src="assets/images/gallery/chocolate/chocolate_potrait_2.png" alt="">
             </div>
          </div>
          <div class="gallery-column gallery-column-5">
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-8" >
                <img src="assets/images/gallery/batik/batik_potrait_1.png" alt="">
             </div>
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-2" >
                <img src="assets/images/gallery/batik/batik_square_2.png" alt="">
             </div>
          </div>
          <div class="gallery-column gallery-column-6">
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-2" >
                <img src="assets/images/gallery/chocolate/chocolate_square_4.png" alt="">
             </div>
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-8" >
                <img src="assets/images/gallery/klangon/klangon_potrait_3.png" alt="">
             </div>
          </div>
          <div class="gallery-column gallery-column-7">
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-8" >
                <img src="assets/images/gallery/chocolate/chocolate_potrait_3.png" alt="">
             </div>
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-2" >
                <img src="assets/images/gallery/chocolate/chocolate_square_6.png" alt="">
             </div>
          </div>
          <div class="gallery-column gallery-column-8">
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-2" >
                <img src="assets/images/gallery/batik/batik_square_3.png" alt="">
             </div>
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-8" >
                <img src="assets/images/gallery/batik/batik_potrait_2.png" alt="">
             </div>
          </div>
          <div class="gallery-column gallery-column-9">
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-8" >
                <img src="assets/images/gallery/chocolate/chocolate_potrait_4.png" alt="">
             </div>
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-2" >
                <img src="assets/images/gallery/klangon/klangon_square_1.png" alt="">
             </div>
          </div>
          <div class="gallery-column gallery-column-10">
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-2" >
                <img src="assets/images/gallery/klangon/klangon_square_2.png" alt="">
             </div>
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-8" >
                <img src="assets/images/gallery/chocolate/chocolate_potrait_5.png" alt="">
             </div>
          </div>
          <div class="gallery-column gallery-column-11">
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-8" >
                <img src="assets/images/gallery/klangon/klangon_potrait_4.png" alt="">
             </div>
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-2" >
                <img src="assets/images/gallery/batik/batik_square_4.png" alt="">
             </div>
          </div>
          <div class="gallery-column gallery-column-12">
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-2" >
                <img src="assets/images/gallery/klangon/klangon_square_3.png" alt="">
             </div>
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-8" >
                <img src="assets/images/gallery/batik/batik_potrait_3.png" alt="">
             </div>
          </div>
          <div class="gallery-column gallery-column-13">
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-8" >
                <img src="assets/images/gallery/batik/batik_potrait_4.png" alt="">
             </div>
-            <div class="gallery-image" >
+            <div class="gallery-image d-flex-2" >
                <img src="assets/images/gallery/klangon/klangon_square_4.png" alt="">
             </div>
          </div>
@@ -214,12 +214,8 @@
    <!-- About Us Section  -->
    <div class="about-us" id="about_us">
       <div class="about-us-main">
-         <h1 class="about-us-heading">Tentang Kita</h1>
-         <p class="about-us-descriptions text-justify">Kami adalah perusahaan yang bergerak di bidang pariwisata khususnya di
-            Yogyakarta. Kami mengangkat wisata - wisata di Yogyakarta yang dirasa masih belum dikenal oleh masyarakat
-            luas. Kami merasa, pilihan - pilihan pariwisata di Yogyakarta yang monoton, membuat banyak potensi
-            pariwisata di wilayah daerah Yogyakarta kurang terekspos media. Oleh karena itu, kami hadir untuk Anda
-            sebagai media informasi pariwisata HiddenGems di Yogyakarta.</p>
+         <h1 data-i18n="about_us_title" class="about-us-heading"></h1>
+         <p data-i18n="about_us_paragraph" class="about-us-descriptions text-justify"></p>
       </div>
       <!-- <div class="about-us-blur"></div> -->
    </div>

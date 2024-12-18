@@ -21,6 +21,10 @@
    box-sizing: border-box;
 }
 
+html {
+   font-size: 16px;
+}
+
 body{
    background-color: rgb(255, 255, 255);
    padding: 0px;
@@ -70,35 +74,45 @@ a {
 }
 
 .navbar {
-   gap: 250px;
-
    background-color: #FFFFFF;
    opacity: 0.8;
    border-radius: 20px;
 
-   /* width: 80%; */
-   width: 1513px;
+   width: 80%;
    margin-left: auto;
    margin-right: auto;
    margin-top: 59px;
    height: 130px;
    padding: 28px;
 
-   position: absolute;
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 99999;
+
    left: 50%;
    transform: translate(-50%);
 
+   justify-content: space-between;
+   transition: opacity 0.8s ease-out;
+}
+
+.navbar.hidden {
+   opacity: 0; 
 }
 
 .navbar-logo-brand {
    gap: 34px;
    padding-left: 34px;
+
+   justify-content: space-between;
 }
 
 .navbar-logo-brand a {
    text-decoration: none;
    font-weight: 700;
-   font-size: 40px;
+   font-size: 2.5rem;
    line-height: 60px;
 
    color: #000000;
@@ -112,7 +126,7 @@ a {
    text-decoration: none;
    
    font-weight: 700;
-   font-size: 24px;
+   font-size: 1.5rem;
    line-height: 36px;
 
    color: #000000;
@@ -150,7 +164,7 @@ a {
    width: 40px;
    height: 30px;
    font-weight: 700;
-   font-size: 20px;
+   font-size: 1.25rem;
    line-height: 30px;
 
    color: #000000;
@@ -212,6 +226,21 @@ a {
    box-sizing: border-box;
 }
 
+.homepage-attractive-text p{
+   font-size: 2rem;
+   line-height: 58px;
+
+   color: #000000;
+}
+
+.attractive-text-left {
+   font-weight: 500;
+}
+
+.attractive-text-right  {
+   font-weight: 700;
+}
+
 /* =========================================*\
 |                                            |
 |              Blogs Section                 |
@@ -219,24 +248,31 @@ a {
 \*==========================================*/
 
 .blogs-area {
+   position: relative;
    padding: 50px 0px 50px 110px;
-   display: grid; 
-   grid-template-columns: 3fr 7fr;
-   grid-template-rows: 1fr;
-
+   align-items: center;
+   justify-content: flex-start;
    overflow-x: auto;
 }
 
 .blogs-area::-webkit-scrollbar {
-   width: 10px;
+   display: none;
 }
 
+.blogs-split-screen-left {
+   transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.blogs-split-screen-left.hidden {
+   opacity: 0; 
+   transform: translateY(-20px);
+}
 
 .blogs-title {
    width: 500px;
 
    font-weight: 500;
-   font-size: 40px;
+   font-size: 2.5rem;
    line-height: 58px;
 
    color: #000000;
@@ -246,7 +282,7 @@ a {
    width: 460px;
 
    font-weight: 700;
-   font-size: 74px;
+   font-size: 4.625rem;
    line-height: 90px;
 
    color: #000000;
@@ -256,7 +292,7 @@ a {
    width: 500px;
 
    font-weight: 500;
-   font-size: 26px;
+   font-size: 1.625rem;
    line-height: 55px;
 
    color: #000000;
@@ -267,11 +303,8 @@ a {
 }
 
 .blogs-wrapper {
-   /* Aktifkan jika akan menambahkan box container blogs diamping coklat */
-   /* margin: 0 -34px; */
-   display: grid;
-   grid-template-columns: auto auto auto;
    grid-gap: 35px;
+   display: flex;
    
 }
 
@@ -309,10 +342,12 @@ a {
    margin-top: auto;
 
    font-weight: 600;
-   font-size: 70px;
+   font-size: 4.375rem;
    line-height: 80px;
 
    color: #FFFFFF;
+
+   transition: transform 0.5s ease-in-out;
 
 }
 
@@ -323,10 +358,15 @@ a {
    margin-bottom: 20px;
 
    font-weight: 400;
-   font-size: 32px;
+   font-size: 2rem;
    line-height: 45px;
 
    color: #FFFFFF;
+
+   transform: translateY(100%); 
+   transition: all 0.5s ease-in-out;
+   opacity: 0;
+   position: absolute;
 
 }
 
@@ -338,50 +378,46 @@ a {
    margin-left: auto;
    margin-right: auto;
    text-align: center;
-   justify-content: center;
 
    border: 4px solid #FFFFFF;
    border-radius: 66px;
    background-color: transparent !important;
+   transition: all 0.3s ease;
 
    font-weight: 400;
-   font-size: 28px;
+   font-size: 1.75rem;
    line-height: 42px;
 
    color: #FFFFFF;
+   cursor: pointer;
 
 }
 
 .blogs-chocolate-container {
-   background-image: url(../images/homepage/museum.jpeg);
+   background-image: url(../images/homepage/museum.png);
 }
 
 .blogs-batik-container {
-   background-image: url(../images/homepage/batik.jpeg);
+   background-image: url(../images/homepage/batik.png);
 }
 
-.blogs-pantai-container {
-   background-image: url(../images/homepage/pantai.jpeg);
+.blogs-klangon-container {
+   background-image: url(../images/homepage/klangon.png);
 }
 
-.conteudo{
-   width: 1200px;
-}
 
-.carrousel{ 
-   display: grid; 
-   grid-auto-flow: column;
-   /* gap: 1.2rem;  */
-   overflow-x: auto; 
-   overflow-y: hidden; 
-   overscroll-behavior-x: contain; 
-   scroll-snap-type: x mandatory; 
-   scrollbar-width: none; /* Firefox */ 
-   cursor: grab;
+.blogs-container:hover .blogs-homepage-clickbait { 
+   opacity: 1; 
+   transform: translateY(-100%); 
 } 
 
-.carrousel::-webkit-scrollbar{ 
-   display: none; /* Webkit browsers */
+.blogs-container:hover .blogs-homepage-title { 
+   transform: translateY(-50%);  
+}
+
+.blogs-homepage-learn-more:hover { 
+   color: #000000; 
+   background-color: #FAFAFA !important; 
 }
 
 
@@ -392,18 +428,24 @@ a {
 \*==========================================*/
 
 .section-gallery {
-   padding: 50px 0px 50px 110px;
+   /* padding: 50px 0px 50px 0px; */
+
+   /* display: block;
+   height: 100vh;
+   overflow: hidden; */
+   gap: 16px;
 }
 
 .section-gallery h1{
-   height: 72px;
    font-weight: 700;
-   font-size: 48px;
+   font-size: 2.5rem;
    line-height: 72px;
    letter-spacing: 0.05em;
    text-align: center;
 
    color: #000000;
+
+   flex: 1;
 }
 
 .section-gallery .slider-gallery {
@@ -414,25 +456,26 @@ a {
    gap: 20px;
 
    overflow-x: auto;
-   
-   /* --marquee-max-width: 90vw;
-   block-size: var(--marquee-item-height);
-   max-inline-size: var(--marquee-max-width);
-   overflow-x: hidden;
-   position: relative;
-   mask-image: linear-gradient(
-     to right,
-     hsl(0 0% 0% / 0),
-     hsl(0 0% 0% / 1) 20%,
-     hsl(0 0% 0% / 1) 80%,
-     hsl(0 0% 0% / 0)
-   ); */
+   flex: 9;
 }
+
+.section-gallery .slider-gallery::-webkit-scrollbar {
+   display: none;
+}
+
 .section-gallery .slider-gallery .gallery-column {
    display: flex;
    flex-direction: column;
 
    gap: 16px;
+}
+
+.d-flex-8 {
+   flex: 8;
+}
+
+.d-flex-2 {
+   flex: 2;
 }
 
 .gallery-image  {
@@ -475,30 +518,22 @@ a {
 }
 
 
+
+
 /* =========================================*\
 |                                            |
 |             About Us Section               |
 |                                            |
 \*==========================================*/
 
-.about-us {
-   /* background-image: url(../images/homepage/about_us_background.png); */
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
-   
-   background-attachment: fixed;
-
-   height: 100vh;
-}
-
 .about-us-main {
-   padding: 50px 0px 50px 110px;
+   padding: 50px 50px 50px 110px;
    background-color: #FFFFFF;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .about-us-heading {
-   width: 535px;
    height: 120px;
 
    font-weight: 700;
@@ -509,26 +544,12 @@ a {
 }
 
 .about-us-descriptions {
-   width: 1649px;
-   height: 287px;
-
    font-weight: 500;
-   font-size: 26px;
+   font-size: 1.625rem;
    line-height: 48px;
    letter-spacing: 0.05em;
 
    color: #000000;
-}
-
-.about-us-blur {
-   position: absolute;
-   margin: -100px -100px 0px -100px;
-   width: 200%;
-   height: 211px;
-
-   background: #FFFFFF;
-   filter: blur(40px);
-
 }
 
 /* =========================================*\
@@ -550,11 +571,12 @@ footer {
 
 footer .footer-brand {
    width: min-content;
+
+   flex: 2;
 }
 
 footer img {
-   width: 331px;
-   height: 381px;
+   max-width: 100%;
 }
 
 footer a, footer i{
@@ -565,7 +587,7 @@ footer .footer-brand a {
    padding: 0px;
    text-wrap: nowrap;
    font-weight: 900;
-   font-size: 48px;
+   font-size: 3rem;
    line-height: 72px;
    text-align: center;
 
@@ -579,13 +601,20 @@ footer .footer-column {
 }
 
 footer .footer-column a {
-   font-size: 22px;
+   font-size: 1.375rem;
 }
 
-footer .footer-contact a {
-   width: 420px;
-   height: 108px;
+.footer-contact {
+   flex: 3;
+   text-wrap: wrap;
+}
 
+.footer-menu {
+   flex: 2;
+}
+
+.footer-team {
+   flex: 3;
 }
 
 footer .footer-contact .social-media {
@@ -595,9 +624,6 @@ footer .footer-contact .social-media {
    padding: 0px;
    gap: 24px;
 
-   width: 136px;
-   height: 56px;
-
    flex: none;
    order: 1;
    flex-grow: 0;
@@ -605,14 +631,14 @@ footer .footer-contact .social-media {
 }
 
 footer .footer-contact .social-media a {
-   font-size: 2em; 
+   font-size: 2em;
 }
 
 footer p {
    height: 48px;
 
    font-weight: 600;
-   font-size: 50px;
+   font-size: 3.125rem;
    line-height: 48px;
 
    color: #FAFAFA;
@@ -649,7 +675,6 @@ footer .footer-link {
 }
 
 .copyright {
-   font-size: 2em; 
    color: #FFFFFF;
 }
 
@@ -673,6 +698,13 @@ footer .footer-link {
 |            Batik Blog CSS Area             |
 |                                            |
 \*==========================================*/
+.section-hero-batik {
+   background-image: url(../images/blogs/batik/Mask\ Hero\ Batik.png);
+}
+
+.section-main-article-batik {
+   background-image:  url(../images/blogs/batik/jkfgkjt\ 1.png),linear-gradient(180deg, #434343 0%, #BBBBBB 100%);
+}
 
 
 
@@ -1003,11 +1035,34 @@ footer .footer-link {
 |           Responsive CSS Area              |
 |                                            |
 \*==========================================*/
-@media (max-width: 850px) {
-   .homepage-attractive-text {
-      margin: 4px auto;
-      transform: none;
-      max-width: calc(100% - 25px);
-      height: auto;
-   }
+@media (max-width: 768px) { 
+   .navbar { 
+      flex-wrap: wrap; 
+   } 
+   
+   .navbar-logo-brand { 
+      width: 100%; 
+      justify-content: space-between; 
+   } 
+   
+   .navbar-menu { 
+      width: 100%; 
+      flex-direction: column; 
+      display: none; 
+   } 
+   
+   .navbar-menu a { 
+      text-align: left; 
+      padding: 10px 15px; 
+      width: 100%; 
+      border-top: 1px solid #444; 
+   } 
+   
+   .navbar-menu-icon { 
+      display: block; 
+   } 
+   
+   .navbar-menu.active { 
+      display: flex; 
+   } 
 }
