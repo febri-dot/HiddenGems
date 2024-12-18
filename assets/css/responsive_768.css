@@ -1,6 +1,6 @@
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
    html {
-      font-size: 14px;
+      font-size: 12px;
    }
 
    .navbar-logo-brand a {
@@ -56,10 +56,6 @@
       font-size: 2.5rem;
    }
 
-   /* .section-gallery .gallery-column {
-      width: calc(33.333% - 20px);
-   } */
-
    .about-us-descriptions {
       font-size: 1.625rem;
    }
@@ -70,17 +66,5 @@
 
    footer p {
       font-size: 3.125rem;
-   }
-
-   footer {
-      gap: 20px;
-   }
-
-
-   .homepage-attractive-text {
-      margin: 4px auto;
-      transform: none;
-      max-width: calc(100% - 25px);
-      height: auto;
    }
 }

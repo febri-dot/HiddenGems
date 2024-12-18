@@ -85,11 +85,21 @@ a {
    height: 130px;
    padding: 28px;
 
-   position: absolute;
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 99999;
+
    left: 50%;
    transform: translate(-50%);
 
    justify-content: space-between;
+   transition: opacity 0.8s ease-out;
+}
+
+.navbar.hidden {
+   opacity: 0; 
 }
 
 .navbar-logo-brand {
@@ -214,6 +224,21 @@ a {
 
    padding: 23px 38px;
    box-sizing: border-box;
+}
+
+.homepage-attractive-text p{
+   font-size: 2rem;
+   line-height: 58px;
+
+   color: #000000;
+}
+
+.attractive-text-left {
+   font-weight: 500;
+}
+
+.attractive-text-right  {
+   font-weight: 700;
 }
 
 /* =========================================*\
@@ -369,15 +394,15 @@ a {
 }
 
 .blogs-chocolate-container {
-   background-image: url(../images/homepage/museum.jpeg);
+   background-image: url(../images/homepage/museum.png);
 }
 
 .blogs-batik-container {
-   background-image: url(../images/homepage/batik.jpeg);
+   background-image: url(../images/homepage/batik.png);
 }
 
 .blogs-klangon-container {
-   background-image: url(../images/homepage/pantai.jpeg);
+   background-image: url(../images/homepage/klangon.png);
 }
 
 
@@ -403,12 +428,15 @@ a {
 \*==========================================*/
 
 .section-gallery {
-   padding: 50px 0px 50px 0px;
+   /* padding: 50px 0px 50px 0px; */
+
+   /* display: block;
    height: 100vh;
+   overflow: hidden; */
+   gap: 16px;
 }
 
 .section-gallery h1{
-   height: 72px;
    font-weight: 700;
    font-size: 2.5rem;
    line-height: 72px;
@@ -416,6 +444,8 @@ a {
    text-align: center;
 
    color: #000000;
+
+   flex: 1;
 }
 
 .section-gallery .slider-gallery {
@@ -426,6 +456,7 @@ a {
    gap: 20px;
 
    overflow-x: auto;
+   flex: 9;
 }
 
 .section-gallery .slider-gallery::-webkit-scrollbar {
@@ -437,6 +468,14 @@ a {
    flex-direction: column;
 
    gap: 16px;
+}
+
+.d-flex-8 {
+   flex: 8;
+}
+
+.d-flex-2 {
+   flex: 2;
 }
 
 .gallery-image  {
@@ -488,8 +527,10 @@ a {
 \*==========================================*/
 
 .about-us-main {
-   padding: 50px 0px 50px 110px;
+   padding: 50px 50px 50px 110px;
    background-color: #FFFFFF;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .about-us-heading {
@@ -530,11 +571,12 @@ footer {
 
 footer .footer-brand {
    width: min-content;
+
+   flex: 2;
 }
 
 footer img {
-   width: 331px;
-   height: 381px;
+   max-width: 100%;
 }
 
 footer a, footer i{
@@ -562,10 +604,17 @@ footer .footer-column a {
    font-size: 1.375rem;
 }
 
-footer .footer-contact a {
-   width: 420px;
-   height: 108px;
+.footer-contact {
+   flex: 3;
+   text-wrap: wrap;
+}
 
+.footer-menu {
+   flex: 2;
+}
+
+.footer-team {
+   flex: 3;
 }
 
 footer .footer-contact .social-media {
@@ -575,9 +624,6 @@ footer .footer-contact .social-media {
    padding: 0px;
    gap: 24px;
 
-   width: 136px;
-   height: 56px;
-
    flex: none;
    order: 1;
    flex-grow: 0;
@@ -585,7 +631,7 @@ footer .footer-contact .social-media {
 }
 
 footer .footer-contact .social-media a {
-   font-size: 2em; 
+   font-size: 2em;
 }
 
 footer p {
@@ -629,7 +675,6 @@ footer .footer-link {
 }
 
 .copyright {
-   font-size: 2em; 
    color: #FFFFFF;
 }
 

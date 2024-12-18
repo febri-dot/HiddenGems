@@ -72,10 +72,12 @@ window.onscroll = function (e) {
 
    if (current_scroll_position > last_scroll_posisition) {
       // Scroll Down
+      document.querySelector(".navbar").classList.add("hidden");
       
 
    }else if (current_scroll_position < last_scroll_posisition) {
       // Scroll Up
+      document.querySelector(".navbar").classList.remove("hidden");
    }
 
    last_scroll_posisition = current_scroll_position;
