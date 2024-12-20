@@ -139,7 +139,9 @@ let new_text_delay = 2000;
 let text_index = char_index = 0
 
 document.addEventListener("DOMContentLoaded", function () {
-   if (text.length) setTimeout(typing, new_text_delay + 250);
+   if(typed_text) {
+      if (text.length) setTimeout(typing, new_text_delay + 250);
+   }
 });
 
 function typing() {

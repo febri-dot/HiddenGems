@@ -1,73 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Section Slider</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .blog-section {
-            display: flex;
-            width: 100%;
-            position: relative; /* Ensure the parts are positioned relative to the container */
-        }
-        .blog-section > div {
-            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-        }
-        .part-1 {
-            width: 25%; /* 1/4th of the total width */
-            background-color: #f4f4f4;
-            padding: 20px;
-            box-sizing: border-box;
-            position: absolute; /* Position it absolute to overlap */
-            left: 0;
-            z-index: 1; /* Ensure it is on top initially */
-        }
-        .part-3 {
-            width: 75%; /* 3/4th of the total width */
-            background-color: #ddd;
-            padding: 20px;
-            box-sizing: border-box;
-            overflow-x: auto;
-            white-space: nowrap;
-            position: absolute; /* Position it absolute to overlap */
-            right: 0;
-            z-index: 2; /* Ensure it is above part-1 */
-        }
-        .hidden {
-            transform: translateX(-100%);
-            opacity: 0;
-        }
-        .button-container {
-            position: relative;
-            z-index: 3; /* Ensure the button is always on top */
-        }
-    </style>
-</head>
-<body>
-    <div class="blog-section" id="blog-section">
-        <div class="part-1" id="part-1">
-            <p>This part is 1/4th of the section.</p>
-        </div>
-        <div class="part-3" id="part-3">
-            <p>This part is 3/4th of the section and can slide to the left.</p>
-            <!-- Add more content here to see the sliding effect -->
-        </div>
-    </div>
-    <div class="button-container">
-        <button onclick="slideLeft()">Slide Left</button>
-    </div>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
-    <script>
-        function slideLeft() {
-            const part1 = document.getElementById('part-1');
-            const part3 = document.getElementById('part-3');
-            
-            part1.classList.add('hidden');
-            part3.style.transform = `translateX(-25%)`; // Adjust based on the part-1 width
+    body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #000;
+        color: #eee;
+    }
+
+    .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container p {
+        font-size: 3rem;
+        padding: 0.5rem;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .container p span.typed-text {
+        font-weight: normal;
+        color: #dd7732;
+    }
+
+    p span.cursor {
+        display: inline-block;
+        background-color: #ccc;
+        margin-left: 0.1rem;
+        width: 3px;
+        animation: blink 1s infinite;
+    }
+
+    p span.cursor.typing {
+        animation: none;
+    }
+
+    @keyframes blink {
+        0% {
+            background-color: #ccc;
         }
-    </script>
-</body>
-</html>
+
+        49% {
+            background-color: #ccc;
+        }
+
+        50% {
+            background-color: transparent;
+        }
+
+        99% {
+            background-color: transparent;
+        }
+
+        100% {
+            background-color: #ccc;
+        }
+    }
+</style>
+
+<div class="container">
+    <p>Coding is <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+</div>
+
+<script>
+    const typedTextSpan = document.querySelector(".typed-text");
+    const cursorSpan = document.querySelector(".cursor");
+
+    const textArray = ["hard", "fun", "a journey", "LIFE"];
+    const typingDelay = 200;
+    const erasingDelay = 100;
+    const newTextDelay = 2000; // Delay between current and next text
+    let textArrayIndex = 0;
+    let charIndex = 0;
+
+    function type() {
+        if (charIndex < textArray[textArrayIndex].length) {
+            if (!cursorSpan.classList.contains("typing"))
+                cursorSpan.classList.add("typing");
+            typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(type, typingDelay);
+        } else {
+            cursorSpan.classList.remove("typing");
+            setTimeout(erase, newTextDelay);
+        }
+    }
+
+    function erase() {
+        if (charIndex > 0) {
+            if (!cursorSpan.classList.contains("typing"))
+                cursorSpan.classList.add("typing");
+            typedTextSpan.textContent = textArray[textArrayIndex].substring(
+                0,
+                charIndex - 1
+            );
+            charIndex--;
+            setTimeout(erase, erasingDelay);
+        } else {
+            cursorSpan.classList.remove("typing");
+            textArrayIndex++;
+            if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+            setTimeout(type, typingDelay + 1100);
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // On DOM Load initiate the effect
+        if (textArray.length) setTimeout(type, newTextDelay + 250);
+    });
+
+</script>
