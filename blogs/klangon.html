@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Title Website -->
+   <title>Bukit Klangon | Hidden Gems</title>
+   <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+
+
+   <link rel="stylesheet" href="../assets/css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
+</head>
+
+<body>
+
+   <div class="navbar d-flex jc-c">
+      <div class="navbar-logo-brand d-flex">
+         <img src="../assets/images/logo.png" alt="HiddenGems Logo">
+         <a href="">HIDDEN GEMS</a>
+      </div>
+      <div class="navbar-menu d-flex">
+         <a data-i18n="navbar_home" data-destination_id="home" onclick="scrollToView(this)"></a>
+         <a data-i18n="navbar_blogs" data-destination_id="blogs" onclick="scrollToView(this)"></a>
+         <a data-i18n="navbar_gallery" data-destination_id="gallery" onclick="scrollToView(this)"></a>
+         <a data-i18n="navbar_about_us" data-destination_id="about_us" onclick="scrollToView(this)"></a>
+
+
+         <div class="dropdown">
+            <div class="active-language list-language d-flex jc-c">
+               <img src="../assets/images/languages/idn.png" alt="Bahasa Indonesia">
+               <span>IDN</span>
+            </div>
+            <div class="dropdown-content">
+               <div class="dropdown-option selection-hover">
+                  <div class="list-language d-flex jc-c" data-language="idn" onclick="changeLanguage('idn')">
+                     <img src="../assets/images/languages/idn.png" alt="Bahasa Indonesia">
+                     <span>IDN</span>
+                  </div>
+               </div>
+               <div class="dropdown-option selection-hover">
+                  <div class="list-language d-flex jc-c" data-language="usa" onclick="changeLanguage('usa')">
+                     <img src="../assets/images/languages/usa.png" alt="Bahasa Inggris">
+                     <span>USA</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- 
+      section-hero-chocolate  iki ka
+   -->
+   <div class="section-hero section-hero-chocolate d-flex">
+      <h1 data-i18n="hero_title_klangon" class="title-page m-0"></h1>
+   </div>
+
+   <div class="section-main-article section-main-article-chocolate">
+      <h2 data-i18n="main_article_title_klangon">The most beautiful beaches in the world!</h2>
+      <div class="article">
+         <p data-i18n="main_article_first_paragraph_klangon" class="first-paragraph"></p>
+         <p data-i18n="main_article_second_paragraph_klangon" class="second-paragraph"></p>
+         <p data-i18n="main_article_thrid_paragraph_klangon" class="thrid-paragraph"></p>
+      </div>
+   </div>
+
+   <div class="section-funfact">
+    <img src="../assets/images/blogs/chocolate/chocolate_funfact.png" alt="">
+    <div class="funfact-linear-overlay-backgorund"></div>
+    <div class="funfact-content">
+       <h2 data-i18n="funfact_title_klangon" class="m-0"></h2>
+       <div class="funfact">
+          <p data-i18n="funfact_klangon" ></p>
+       </div>
+    </div>
+ </div>
+
+   <div class="section-what-can-i-do">
+      <div class="what-can-i-do-wrapper d-flex">
+         <div class="what-can-i-do d-flex active" data-index="1">
+            <div class="left-section">
+               <img src="../assets/images/blogs/chocolate/pre_produksi.png" alt="">
+            </div>
+            <div class="right-section">
+               <h2 class="m-0">Pra Produksi</h2>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem unde quia beatae natus iusto quas
+                  sapiente maxime delectus eaque consequatur libero odit facilis quisquam expedita qui suscipit minus
+                  quibusdam ullam quos laboriosam, eos modi incidunt? Inventore quidem debitis a tenetur consequatur,
+                  corrupti dignissimos voluptate qui nostrum itaque molestias sequi, et quia at dolores nihil. Tenetur
+                  qui laboriosam error quaerat molestias.</p>
+            </div>
+         </div>
+         <div class="what-can-i-do d-flex" data-index="2">
+            <div class="left-section">
+               <img src="../assets/images/blogs/chocolate/pre_produksi.png" alt="">
+            </div>
+            <div class="right-section">
+               <h2 data-i18n="what_can_i_do_first_title_chocolate" class="m-0">Pra Produksi</h2>
+               <p data-i18n="what_can_i_do_first_paragrapgh_chocolate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem unde quia beatae natus iusto quas
+                  sapiente maxime delectus eaque consequatur libero odit facilis quisquam expedita qui suscipit minus
+                  quibusdam ullam quos laboriosam, eos modi incidunt? Inventore quidem debitis a tenetur consequatur,
+                  corrupti dignissimos voluptate qui nostrum itaque molestias sequi, et quia at dolores nihil. Tenetur
+                  qui laboriosam error quaerat molestias.</p>
+            </div>
+         </div>
+         <div class="what-can-i-do d-flex" data-index="3">
+            <div class="left-section">
+               <img src="../assets/images/blogs/chocolate/pre_produksi.png" alt="">
+            </div>
+            <div class="right-section">
+               <h2 data-i18n="what_can_i_do_second_title_chocolate" class="m-0">Pra Produksi</h2>
+               <p data-i18n="what_can_i_do_second_paragrapgh_chocolate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem unde quia beatae natus iusto quas
+                  sapiente maxime delectus eaque consequatur libero odit facilis quisquam expedita qui suscipit minus
+                  quibusdam ullam quos laboriosam, eos modi incidunt? Inventore quidem debitis a tenetur consequatur,
+                  corrupti dignissimos voluptate qui nostrum itaque molestias sequi, et quia at dolores nihil. Tenetur
+                  qui laboriosam error quaerat molestias.</p>
+            </div>
+         </div>
+      </div>
+      <div class="scroll-navigations d-flex">
+         <div class="dots-navigation d-flex jc-c">
+            <div class="dot-navigation active" data-index="1" onclick="scrollWhatCanIdo(this)"></div>
+            <div class="dot-navigation" data-index="2" onclick="scrollWhatCanIdo(this)"></div>
+            <div class="dot-navigation" data-index="3" onclick="scrollWhatCanIdo(this)"></div>
+         </div>
+
+         <div class="buttons-navigations d-flex">
+            <div class="button-left-navigation  button-navigation  d-flex jc-c" onclick="scrollWhatCanIdo(this, 'left')">
+               <p class="m-0"><i class="fa-solid fa-arrow-left"></i></p>
+            </div>
+   
+            <div class="button-right-navigation button-navigation d-flex jc-c" onclick="scrollWhatCanIdo(this, 'right')">
+               <p class="m-0"><i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+
+   <div class="section-video full-screen-section">
+      <iframe class="iframe-16-9" title="Perjalanan menakjubkan Yogyakarta" src="https://www.youtube.com/embed/Y4oLvVyP5nE?autoplay=1&mute=1&loop=1&playlist=Y4oLvVyP5nE" frameborder="0" allowfullscreen></iframe>
+   </div>
+
+   <div class="section-gallery gallery-blog" id="gallery">
+      <h1 data-i18n="gallery_title_chocolate" class="m-0">Temukan Keajaiban dalam Keindahan Yogyakarta</h1>
+      <div class="slider-gallery">
+         <div class="gallery-column gallery-column-1">
+            <div class="gallery-image" >
+               <img src="../assets/images/gallery/galeri_1_atas.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="../assets/images/gallery/galeri_1_bawah.png" alt="">
+            </div>
+         </div>
+         <div class="gallery-column gallery-column-2">
+            <div class="gallery-image" >
+               <img src="../assets/images/gallery/galeri_2_atas.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="../assets/images/gallery/galeri_2_bawah.png" alt="">
+            </div>
+         </div>
+         <div class="gallery-column gallery-column-3">
+            <div class="gallery-image" >
+               <img src="../assets/images/gallery/galeri_3_atas.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="../assets/images/gallery/galeri_3_bawah.png" alt="">
+            </div>
+         </div>
+         <div class="gallery-column gallery-column-4">
+            <div class="gallery-image" >
+               <img src="../assets/images/gallery/galeri_4_atas.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="../assets/images/gallery/galeri_4_bawah.png" alt="">
+            </div>
+         </div>
+         <div class="gallery-column gallery-column-5">
+            <div class="gallery-image" >
+               <img src="../assets/images/gallery/galeri_1_atas.png" alt="">
+            </div>
+            <div class="gallery-image" >
+               <img src="../assets/images/gallery/galeri_1_bawah.png" alt="">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="section-maps full-screen-section">
+      <iframe class="iframe-16-9" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.399053451578!2d110.35289277500456!3d-7.747428542271356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a58f2d747cc8d%3A0xba7c703a016a750e!2sUniversitas%20Teknologi%20Yogyakarta!5e0!3m2!1sid!2sid!4v1733279499433!5m2!1sid!2sid" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+
+   <!-- Footer Section -->
+   <footer class="d-flex jc-c">
+      <div class="footer-brand">
+         <img src="../assets/images/big-logo.png" alt="Footer Logo">
+         <a href="">HIDDEN GEMS</a>
+      </div>
+      <div class="footer-column footer-contact">
+         <p data-i18n="footer_contact_title"></p>
+         <a target="_blank" href="https://maps.app.goo.gl/RgHygqoawyWtxqbJA">Jl. Siliwangi (Ringroad Utara), Jombor, Sleman, D.I. Yogyakarta 55285</a>
+         <div class="social-media">
+            <a target="_blank" href="https://uty.ac.id/"><i class="lni lni-globe-1"></i></a>
+            <a target="_blank" href="https://www.youtube.com/c/utycampus"><i class="lni lni-youtube"></i></a>
+         </div>
+      </div>
+      <div class="footer-column footer-menu">
+         <p data-i18n="footer_menu_title"></p>
+         <a data-i18n="navbar_home" class="footer-link" href="#home"></a>
+         <a data-i18n="navbar_blogs" class="footer-link" href="#blogs"></a>
+         <a data-i18n="navbar_gallery" class="footer-link" href="#gallery"></a>
+         <a data-i18n="navbar_about_us" class="footer-link" href="#about_us"></a>
+      </div>
+      <div class="footer-column footer-team">
+         <p data-i18n="footer_team_title"></p>
+         <a class="footer-link" target="_blank" href="#home">1. Muhammad Arya Fattah </a>
+         <a class="footer-link" target="_blank" href="#blogs">2. Wibi Prasetyo Aji </a>
+         <a class="footer-link" target="_blank" href="#gallery">3. Fadhlur Rohman </a>
+         <a class="footer-link" target="_blank" href="https://www.instagram.com/fbrptri__/">4. Febriyanti Putri</a>
+         <a class="footer-link" target="_blank" href="#home">5. Nabil Syahreza Febry U. </a>
+         <a class="footer-link" target="_blank" href="#blogs">6. Indra Surya Purnama</a>
+         <a class="footer-link" target="_blank" href="#gallery">7. Abiyan Risqi Maulana </a>
+         <a class="footer-link" target="_blank" href="https://www.instagram.com/ltf_dian/">8. Diandra Luthfie Prastika</a>
+         <a class="footer-link" target="_blank" href="">9. M. Rafif Maulana</a>
+      </div>
+   </footer>
+   <div class="copyright">
+      <span><i class="fa-regular fa-copyright"></i></span>
+      <p><span class="years">2024</span> <span data-i18n="footer_copyright"></span></p>
+   </div>
+
+   <script src="../assets/js/script.js" ></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js" integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
