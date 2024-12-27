@@ -468,7 +468,7 @@ p {
 \*==========================================*/
 
 .section-gallery {
-   /* padding: 50px 0px 50px 0px; */
+   padding: 50px 0px 50px 0px;
 
    /* display: block;
    height: 100vh;
@@ -924,8 +924,11 @@ footer .footer-link {
 \*==========================================*/
 
 .section-what-can-i-do {
-   padding: 70px 0px 70px 120px;
+   padding: 70px 105px 70px 105px;
    width: 100vw;
+
+   position: relative;
+   overflow: hidden;
 }
 
 .what-can-i-do-wrapper {
@@ -938,6 +941,9 @@ footer .footer-link {
 
    padding-left: 10px;
    justify-content: flex-start;
+
+   position: relative;
+   z-index: 1;
 }
 
 .what-can-i-do-wrapper::-webkit-scrollbar {
@@ -993,6 +999,16 @@ footer .footer-link {
    margin-top: 50px;
 }
 
+.buttons-navigations {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   right: 0;
+   justify-content: space-between;
+   transform: translateY(-50%);
+   z-index: 2;
+}
+
 .button-navigation {
    box-sizing: border-box;
 
@@ -1002,16 +1018,22 @@ footer .footer-link {
    background: #FFFFFF;
    border: 5px solid #000000;
    border-radius: 100px;
+   opacity: 0.05;
+   transition: opacity 0.5s ease-out;
 
    cursor: pointer;
-} 
+}
 
-.buttons-navigations {
-   justify-content: flex-end;
-   gap: 40px;
+.button-navigation:hover {
+   opacity: 1;
+}
 
-   padding-right: 130px;
-   margin-left: auto;
+.button-left-navigation {
+   margin-left: 10px;
+}
+
+.button-right-navigation {
+   margin-right: 10px;
 }
 
 .scroll-navigations p {

@@ -199,6 +199,16 @@ function infiniteScrollGallery(slider) {
    }
 }
 
+// Prevent Scroll What Can I do Using Mouse
+document.querySelector(".section-what-can-i-do").addEventListener('wheel', 
+   function(event) { 
+      if (event.shiftKey) { 
+         event.preventDefault(); 
+      } 
+   }, 
+   { passive: false }
+);
+
 // Blogs Scroll What Can I do
 function scrollWhatCanIdo(button, direction=false){
    let parent        = button.closest(".section-what-can-i-do")
