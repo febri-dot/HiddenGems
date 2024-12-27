@@ -658,6 +658,10 @@ footer .footer-column a {
    flex: 3;
 }
 
+.footer-team a{
+   pointer-events: none;
+}
+
 footer .footer-contact .social-media {
    display: flex;
    flex-direction: column;
